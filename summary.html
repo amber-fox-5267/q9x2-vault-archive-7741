@@ -8,18 +8,32 @@ body{font-family:"Malgun Gothic",sans-serif;background:#0C0C0D;color:#E4E4E7;fon
 .wrap{max-width:720px;margin:0 auto;padding:32px 16px}
 h1{font-size:22px;font-weight:700;color:#F4F4F5;margin-bottom:4px}
 .sub{color:#6B6B70;font-size:12px;margin-bottom:24px}
-.hero{background:#141416;border:1px solid #2A2A2E;border-radius:14px;padding:24px;display:flex;
-       align-items:center;gap:28px;margin-bottom:18px;flex-wrap:wrap;justify-content:center}
+/* 히어로: 차트는 가운데, 숫자 블록은 좌측 정렬로 통일 */
+.hero{background:#141416;border:1px solid #2A2A2E;border-radius:14px;padding:24px;
+       display:flex;flex-direction:column;align-items:center;gap:18px;margin-bottom:18px}
+.hero-donut{flex:0 0 auto}
+.hero-info{width:100%;text-align:left}
 .hero-num{font-size:34px;font-weight:700;color:#F4F4F5;letter-spacing:-0.5px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:600px){.grid2{grid-template-columns:1fr}}
+/* 아이패드 등 큰 화면: 글씨·여백·차트 확대 */
+@media(min-width:768px){
+  body{font-size:17px}
+  .wrap{max-width:920px;padding:48px 32px}
+  h1{font-size:30px}
+  .sub{font-size:14px;margin-bottom:32px}
+  .hero{padding:36px;gap:26px}
+  .hero-num{font-size:48px}
+  .hero-donut svg{width:230px !important;height:230px !important}
+  .grid2{gap:20px}
+}
 </style></head><body>
 <div class="wrap">
   <h1>자산 종합 요약</h1>
-  <div class="sub">생성: 2026-06-07 11:53 &nbsp;|&nbsp; 수익률 = (평가금액 − 순투자원금) / 순투자원금</div>
+  <div class="sub">생성: 2026-06-07 20:48 &nbsp;|&nbsp; 수익률 = (평가금액 − 순투자원금) / 순투자원금</div>
 
   <div class="hero">
-    
+    <div class="hero-donut">
     <svg viewBox="0 0 200 200" style="width:180px;height:180px">
       <circle cx="100" cy="100" r="70" fill="none" stroke="#2A2A2E" stroke-width="26"/>
       <circle cx="100" cy="100" r="70" fill="none" stroke="#2DD4BF" stroke-width="26"
@@ -31,8 +45,8 @@ h1{font-size:22px;font-weight:700;color:#F4F4F5;margin-bottom:4px}
       <text x="100" y="96" text-anchor="middle" fill="#F4F4F5" font-size="13" font-weight="500">총자산</text>
       <text x="100" y="116" text-anchor="middle" fill="#8E8E93" font-size="11">326,890,990</text>
     </svg>
-    
-    <div>
+    </div>
+    <div class="hero-info">
       <div style="font-size:12px;color:#8E8E93;margin-bottom:4px">총 자산</div>
       <div class="hero-num">326,890,990원</div>
       <div style='font-size:14px;margin-top:10px'><span style='color:#FF5A5A;font-weight:600'>+84,128,008원</span> <span style='color:#FF5A5A'>(+34.7%)</span></div>
