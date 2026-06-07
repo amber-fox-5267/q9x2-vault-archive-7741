@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>나무증권 생활비 리포트</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Malgun Gothic",sans-serif;background:#F2F3F5;color:#222;font-size:14px;line-height:1.65}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px}
+h1{font-size:24px;font-weight:700;margin-bottom:4px}
+.sub{color:#777;font-size:13px;margin-bottom:28px}
+.card{background:#fff;border-radius:12px;padding:22px 24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.ct{font-size:15px;font-weight:700;color:#333;border-left:4px solid #1D9E75;padding-left:10px;margin-bottom:18px}
+/* 총자산 카드 */
+.total-card{background:linear-gradient(135deg,#1D9E75,#0F6E56);color:#fff;border-radius:12px;padding:22px 24px;margin-bottom:20px}
+.total-label{font-size:13px;opacity:.8;margin-bottom:6px}
+.total-amount{font-size:36px;font-weight:700}
+.total-sub{font-size:13px;opacity:.8;margin-top:6px}
+/* 핵심성과지표 */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}
+.metric{background:#F7F8FA;border-radius:8px;padding:14px 16px}
+.ml{font-size:12px;color:#888;margin-bottom:5px}
+.mv{font-size:21px;font-weight:700}
+.pos{color:#0F7B5F}.neg{color:#C0392B}.neu{color:#222}
+/* 매도 성과 */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.st{font-size:13px;font-weight:700;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:#F5F5F5;padding:9px 11px;font-weight:600;color:#555;border-bottom:2px solid #E8E8E8}
+td{padding:8px 11px;border-bottom:1px solid #F2F2F2}
+tr:hover td{background:#FAFAFA}
+.r{text-align:right}.n{max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* 보유 종목 */
+.note{font-size:12px;color:#999;margin-top:10px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.cl{font-size:12px;font-weight:600;color:#666;margin-bottom:8px}
+@media(max-width:600px){.cg{grid-template-columns:1fr}}
+@media(max-width:700px){.two{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>나무증권 생활비 성과 리포트</h1>
+  <div class="sub">생성: 2026.06.06 23:28 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.06.03</div>
+  <div class="total-card">
+  <div class="total-label">총 자산</div>
+  <div class="total-amount">85,713,310원</div>
+  <div class="total-sub">주식평가 85,713,310원 + 예수금 0원</div>
+</div>
+  <div class="card">
+  <div class="ct">핵심 성과 지표</div>
+  <div class="metrics"><div class="metric">
+  <div class="ml">순 입금액 (총납입금)</div>
+  <div class="mv pos">+51,573,248원</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">KRW + USD (현재환율)</div>
+</div>
+<div class="metric">
+  <div class="ml">평가 금액</div>
+  <div class="mv neu">85,713,310원</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">현재가 기준</div>
+</div>
+<div class="metric">
+  <div class="ml">평가 손익</div>
+  <div class="mv neg">-1,517,859원</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">보유종목 미실현손익 합계</div>
+</div>
+<div class="metric">
+  <div class="ml">실현 손익</div>
+  <div class="mv pos">+34,500,792원</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">국내 + 해외 (거래당시환율)</div>
+</div>
+<div class="metric">
+  <div class="ml">분배금 + 이자</div>
+  <div class="mv pos">+678,829원</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">KRW + USD 환산</div>
+</div>
+<div class="metric">
+  <div class="ml">총 손익</div>
+  <div class="mv pos">+33,661,762원</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
+</div>
+<div class="metric">
+  <div class="ml">누적 수익률</div>
+  <div class="mv pos">+65.3%</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">총손익 ÷ 순입금액</div>
+</div>
+<div class="metric">
+  <div class="ml">Modified Dietz</div>
+  <div class="mv pos">+673.8%</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">시간가중 수익률</div>
+</div>
+<div class="metric">
+  <div class="ml">연평균 성장률 (CAGR)</div>
+  <div class="mv pos">+14.0%</div>
+  <div style="font-size:11px;color:#aaa;margin-top:3px">3.9년 기준</div>
+</div>
+</div>
+</div>
+
+  
+  <div class="card">
+  <div class="ct">포트폴리오 구성 <span style="font-size:11px;color:#aaa;font-weight:400">(현재가 기준)</span></div>
+  <div class="cg">
+    <div>
+      <div class="cl">보유 비중</div>
+      <canvas id="cDonut_port" style="width:100%;height:280px;display:block"></canvas>
+      <script>
+(function(){
+  var labels=["TRADR 샌디스크 2배 ", "디렉시온 마이크론 테크놀로"];
+  var vals=[44950779, 40762531];
+  var colors=["#1D9E75", "#378ADD"];
+  var cv=document.getElementById('cDonut_port');
+  function resize(){
+    var w=cv.parentElement.offsetWidth||300;
+    var dpr=window.devicePixelRatio||1;
+    cv.width=w*dpr;cv.height=280*dpr;cv.style.width=w+'px';cv.style.height='280px';
+    draw();
+  }
+  function draw(){
+    var dpr=window.devicePixelRatio||1;
+    var rW=cv.width/dpr,rH=cv.height/dpr;
+    var ctx=cv.getContext('2d');
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.save();ctx.scale(dpr,dpr);
+    var total=vals.reduce(function(a,b){return a+b;},0);
+    var cx=rW/2,cy=rH/2-10,r=Math.min(rW,rH)*0.36,ir=r*0.58;
+    var start=-Math.PI/2;
+    vals.forEach(function(v,i){
+      var angle=v/total*Math.PI*2;
+      ctx.beginPath();ctx.moveTo(cx,cy);
+      ctx.arc(cx,cy,r,start,start+angle);ctx.closePath();
+      ctx.fillStyle=colors[i%colors.length];ctx.fill();
+      ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.stroke();
+      if(v/total>0.05){
+        var mid=start+angle/2;
+        var lx=cx+Math.cos(mid)*(r+ir)/2,ly=cy+Math.sin(mid)*(r+ir)/2;
+        ctx.fillStyle='#fff';ctx.font='bold 10px sans-serif';ctx.textAlign='center';
+        ctx.fillText((v/total*100).toFixed(1)+'%',lx,ly+4);
+      }
+      start+=angle;
+    });
+    ctx.beginPath();ctx.arc(cx,cy,ir,0,Math.PI*2);
+    ctx.fillStyle='#fff';ctx.fill();
+    ctx.fillStyle='#333';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
+    ctx.fillText('보유 비중',cx,cy-4);
+    ctx.font='10px sans-serif';ctx.fillStyle='#888';
+    ctx.fillText('2종목',cx,cy+12);
+    ctx.restore();
+  }
+  window.addEventListener('resize',resize);
+  resize();
+})();
+      </script>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center">
+      <table><thead><tr><th>종목명</th><th class="r">평가금액</th><th class="r">비중</th></tr></thead>
+      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#1D9E75;margin-right:5px;vertical-align:middle'></span>TRADR 샌디스크 2배 ETF</td><td class='r'>4495만원</td><td class='r'>52.4%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#378ADD;margin-right:5px;vertical-align:middle'></span>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r'>4076만원</td><td class='r'>47.6%</td></tr></tbody></table>
+    </div>
+  </div>
+</div>
+  <div class="card">
+  <div class="ct">보유 종목 상세 (2종목)</div>
+  <div style="overflow-x:auto">
+  <table><thead><tr>
+    <th>종목명</th><th class="c">코드</th><th class="r">수량</th>
+    <th class="r">평단가</th><th class="r">현재가</th><th class="r">평가금액(원)</th>
+    <th class="r">미실현손익</th><th class="r">수익률</th><th class="r">보유기간</th>
+  </tr></thead><tbody><tr><td class='n'>TRADR 샌디스크 2배 ETF</td><td class='r'>SNXX US</td><td class='r'>1280.0000</td><td class='r'>23.0500 USD</td><td class='r'>23 USD</td><td class='r'>44,950,779</td><td class='r' style='color:#C0392B;font-weight:600'>-512,820</td><td class='r' style='color:#C0392B;font-weight:600'>-1.1%</td><td class='r' style='color:#888'>15일</td></tr><tr><td class='n'>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r'>MUU US</td><td class='r'>40.0000</td><td class='r'>677.6358 USD</td><td class='r'>661 USD</td><td class='r'>40,762,531</td><td class='r' style='color:#C0392B;font-weight:600'>-1,005,040</td><td class='r' style='color:#C0392B;font-weight:600'>-2.4%</td><td class='r' style='color:#888'>15일</td></tr></tbody></table>
+  </div>
+  <div class="note">✅ 전 종목 현재가 조회 완료</div>
+</div>
+
+  <div class="card">
+  <div class="ct">일별 총손익 &amp; 총자산 <span style="font-size:11px;color:#aaa;font-weight:400">단위: 만원 · 최근 60일</span></div>
+  <div style="position:relative">
+<canvas id="cDailyBar" style="width:100%;height:300px;display:block"></canvas>
+<div id="cDailyTip" style="position:absolute;top:10px;left:10px;background:rgba(255,255,255,.97);border:1px solid #e0e0e0;border-radius:8px;padding:8px 12px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+</div>
+<div style="display:flex;gap:16px;justify-content:center;margin-top:8px;font-size:11px;color:#666">
+  <span><span style="display:inline-block;width:10px;height:10px;background:#1D9E75;border-radius:2px;vertical-align:middle"></span> 일별 손익(막대)</span>
+  <span><span style="display:inline-block;width:14px;height:3px;background:#378ADD;vertical-align:middle"></span> 총자산(선)</span>
+</div>
+<script>
+(function(){
+  var labels=["04-07", "04-08", "04-09", "04-10", "04-13", "04-14", "04-15", "04-16", "04-17", "04-20", "04-21", "04-22", "04-23", "04-24", "04-27", "04-28", "04-29", "04-30", "05-01", "05-04", "05-05", "05-06", "05-07", "05-08", "05-11", "05-12", "05-13", "05-14", "05-15", "05-18", "05-19", "05-20", "05-21", "05-22", "05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-03", "06-04", "06-05"];
+  var pnl=[0, 0, 0, -58, 0, 0, 0, 0, 0, 0, 0, 0, 0, -50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4172, -2, 0, 0, 0, 0, 0, 0, 377, 0, 0];
+  var equity=[3691, 4805, 4739, 4674, 4832, 5300, 4953, 5204, 7284, 5306, 5322, 6165, 5632, 6051, 6374, 6052, 6055, 6751, 6977, 7039, 8287, 9456, 8673, 10660, 11107, 8733, 10114, 10337, 8552, 8110, 7889, 9511, 9594, 7937, 8004, 8072, 8250, 8352, 8579, 8825, 12698, 11393, 8571];
+  var hasEquity=true;
+  var cv=document.getElementById('cDailyBar');
+  var tip=document.getElementById('cDailyTip');
+  var PAD={l:52,r:58,t:16,b:42};
+  function fmtK(v){var a=Math.abs(v);if(a>=10000)return(v/10000).toFixed(1)+'억';if(a>=1000)return(v/1000).toFixed(1)+'천';return String(v)+'만';}
+  function niceTicks(mn,mx,cnt){var raw=(mx-mn)/cnt,mag=Math.pow(10,Math.floor(Math.log10(Math.abs(raw)||1))),norm=raw/mag;var nice=norm<1.5?1:norm<3?2:norm<7?5:10;var s=nice*mag;var lo=Math.floor(mn/s)*s,hi=Math.ceil(mx/s)*s;var t=[];for(var v=lo;v<=hi+s*0.01;v+=s)t.push(Math.round(v*1e6)/1e6);return t;}
+  function resize(){
+    var w=cv.parentElement.offsetWidth||600;
+    var dpr=window.devicePixelRatio||1;
+    cv.width=w*dpr;cv.height=300*dpr;cv.style.width=w+'px';cv.style.height='300px';
+    draw(-1);
+  }
+  function draw(hl){
+    var dpr=window.devicePixelRatio||1;
+    var rW=cv.width/dpr,rH=cv.height/dpr;
+    var ctx=cv.getContext('2d');
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.save();ctx.scale(dpr,dpr);
+    var n=labels.length;
+    // 좌축: 손익
+    var pMn=Math.min.apply(null,[0].concat(pnl)),pMx=Math.max.apply(null,[0].concat(pnl));
+    var pp=(pMx-pMn)*0.15||5;var lMn=pMn-pp,lMx=pMx+pp;
+    // 우축: 총자산 (0 제외한 실제값 범위)
+    var eqPos=equity.filter(function(v){return v>0;});
+    var eMx=eqPos.length?Math.max.apply(null,eqPos):1;
+    var eMn=eqPos.length?Math.min.apply(null,eqPos):0;
+    var ep=(eMx-eMn)*0.2||5;var rMn=Math.max(0,eMn-ep),rMx=eMx+ep;
+    function pyL(v){return PAD.t+(1-(v-lMn)/(lMx-lMn||1))*(rH-PAD.t-PAD.b);}
+    function pyR(v){return PAD.t+(1-(v-rMn)/(rMx-rMn||1))*(rH-PAD.t-PAD.b);}
+    function px(i){return PAD.l+((i+0.5)/n)*(rW-PAD.l-PAD.r);}
+    // 좌축 격자
+    niceTicks(lMn,lMx,5).forEach(function(v){
+      var y=pyL(v);
+      ctx.strokeStyle='#f0f0f0';ctx.lineWidth=1;
+      ctx.beginPath();ctx.moveTo(PAD.l,y);ctx.lineTo(rW-PAD.r,y);ctx.stroke();
+      ctx.fillStyle='#aaa';ctx.font='9px sans-serif';ctx.textAlign='right';
+      ctx.fillText(fmtK(v),PAD.l-4,y+3);
+    });
+    // 우축 라벨
+    if(hasEquity){
+      niceTicks(rMn,rMx,5).forEach(function(v){
+        var y=pyR(v);
+        ctx.fillStyle='#378ADD';ctx.font='9px sans-serif';ctx.textAlign='left';
+        ctx.fillText(fmtK(v),rW-PAD.r+4,y+3);
+      });
+    }
+    // 0선
+    var y0=pyL(0);
+    ctx.strokeStyle='#ccc';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(PAD.l,y0);ctx.lineTo(rW-PAD.r,y0);ctx.stroke();
+    // 막대
+    var bw=Math.max(2,(rW-PAD.l-PAD.r)/n*0.55);
+    pnl.forEach(function(v,i){
+      if(v===0)return;
+      var x=px(i),y=pyL(v),h=Math.abs(y0-y)||1;
+      ctx.fillStyle=v>=0?(i===hl?'#0a6647':'#1D9E75'):(i===hl?'#a02020':'#C0392B');
+      ctx.fillRect(x-bw/2,Math.min(y,y0),bw,h);
+    });
+    // 평가금액 꺾은선
+    if(hasEquity){
+      ctx.strokeStyle='#378ADD';ctx.lineWidth=2;ctx.beginPath();
+      var started=false;
+      equity.forEach(function(v,i){
+        if(v<=0)return;
+        var x=px(i),y=pyR(v);
+        if(!started){ctx.moveTo(x,y);started=true;}else{ctx.lineTo(x,y);}
+      });
+      ctx.stroke();
+    }
+    // X축 라벨 (5일 간격)
+    labels.forEach(function(l,i){
+      if(i%5!==0 && i!==n-1)return;
+      var x=px(i);
+      ctx.fillStyle=(i===hl)?'#333':'#aaa';
+      ctx.font='9px sans-serif';ctx.textAlign='center';
+      ctx.fillText(l,x,rH-PAD.b+14);
+    });
+    ctx.restore();
+  }
+  cv.addEventListener('mousemove',function(e){
+    var rect=cv.getBoundingClientRect();
+    var mx=(e.clientX-rect.left);
+    var n=labels.length;
+    var plotW=rect.width-PAD.l-PAD.r;
+    var i=Math.round((mx-PAD.l)/plotW*n-0.5);
+    if(i<0||i>=n){tip.style.opacity=0;draw(-1);return;}
+    draw(i);
+    var v=pnl[i]*10000;var eq=equity[i]*10000;
+    var clr=v>=0?'#0F7B5F':'#C0392B';
+    var html='<b>'+labels[i]+'</b>';
+    if(v!==0)html+='<br>손익 <span style="color:'+clr+'">'+(v>=0?'+':'')+v.toLocaleString()+'원</span>';
+    if(hasEquity&&eq>0)html+='<br>총자산 <span style="color:#378ADD">'+eq.toLocaleString()+'원</span>';
+    tip.innerHTML=html;
+    tip.style.opacity=1;
+    var bw=rect.width;
+    var left=e.clientX-rect.left+14;
+    if(left+150>bw)left=e.clientX-rect.left-164;
+    tip.style.left=Math.max(0,left)+'px';
+    tip.style.top='10px';
+  });
+  cv.addEventListener('mouseleave',function(){tip.style.opacity=0;draw(-1);});
+  window.addEventListener('resize',resize);
+  resize();
+})();
+</script>
+</div>
+  <div class="card">
+  <div class="ct">매도 성과</div>
+  <div class="two" style="margin-bottom:16px">
+    <div><div class="st pos">수익 Best 5</div>
+      <table><thead><tr><th>종목명</th><th class="r">실현손익</th><th class="r">수익률</th></tr></thead>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 MSCI 한국 3배 ETF</td><td class='r' style='color:#0F7B5F;font-weight:600'>+31,563,008원</td><td class='r' style='color:#0F7B5F'>+55.3%<br><span style='font-size:10px;color:#aaa;font-weight:400'>36일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>TRADR 샌디스크 2배 ETF</td><td class='r' style='color:#0F7B5F;font-weight:600'>+9,556,339원</td><td class='r' style='color:#0F7B5F'>+60.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>38일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 AMD 데일리 2배 ETF</td><td class='r' style='color:#0F7B5F;font-weight:600'>+6,505,930원</td><td class='r' style='color:#0F7B5F'>+30.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>19일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>TIGER 반도체TOP10레버리지</td><td class='r' style='color:#0F7B5F;font-weight:600'>+3,466,875원</td><td class='r' style='color:#0F7B5F'>+9.8%<br><span style='font-size:10px;color:#aaa;font-weight:400'>12일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r' style='color:#0F7B5F;font-weight:600'>+1,086,725원</td><td class='r' style='color:#0F7B5F'>+27.6%<br><span style='font-size:10px;color:#aaa;font-weight:400'>27일</span></td></tr></tbody></table></div>
+    <div><div class="st neg">손실 Worst 5</div>
+      <table><thead><tr><th>종목명</th><th class="r">실현손익</th><th class="r">수익률</th></tr></thead>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 200선물인버스2X</td><td class='r' style='color:#C0392B;font-weight:600'>-3,964,810원</td><td class='r' style='color:#C0392B'>-9.6%<br><span style='font-size:10px;color:#aaa;font-weight:400'>3일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 인텔 데일리 2배 ETF</td><td class='r' style='color:#C0392B;font-weight:600'>-2,808,930원</td><td class='r' style='color:#C0392B'>-11.2%<br><span style='font-size:10px;color:#aaa;font-weight:400'>7일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>쎄트렉아이</td><td class='r' style='color:#C0392B;font-weight:600'>-2,202,956원</td><td class='r' style='color:#C0392B'>-22.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>20일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에이치브이엠</td><td class='r' style='color:#C0392B;font-weight:600'>-1,587,963원</td><td class='r' style='color:#C0392B'>-16.0%<br><span style='font-size:10px;color:#aaa;font-weight:400'>20일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>미래에셋증권</td><td class='r' style='color:#C0392B;font-weight:600'>-1,524,280원</td><td class='r' style='color:#C0392B'>-7.1%<br><span style='font-size:10px;color:#aaa;font-weight:400'>1일</span></td></tr></tbody></table></div>
+  </div>
+  <div class="two">
+    <div><div class="st pos">수익률 Best 5</div>
+      <table><thead><tr><th>종목명</th><th class="r">수익률</th><th class="r">실현손익</th></tr></thead>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>TRADR 샌디스크 2배 ETF</td><td class='r' style='color:#0F7B5F'>+60.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>38일</span></td><td class='r' style='color:#0F7B5F;font-weight:600'>+9,556,339원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 MSCI 한국 3배 ETF</td><td class='r' style='color:#0F7B5F'>+55.3%<br><span style='font-size:10px;color:#aaa;font-weight:400'>36일</span></td><td class='r' style='color:#0F7B5F;font-weight:600'>+31,563,008원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 AMD 데일리 2배 ETF</td><td class='r' style='color:#0F7B5F'>+30.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>19일</span></td><td class='r' style='color:#0F7B5F;font-weight:600'>+6,505,930원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r' style='color:#0F7B5F'>+27.6%<br><span style='font-size:10px;color:#aaa;font-weight:400'>27일</span></td><td class='r' style='color:#0F7B5F;font-weight:600'>+1,086,725원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>인텔</td><td class='r' style='color:#0F7B5F'>+9.9%<br><span style='font-size:10px;color:#aaa;font-weight:400'>17일</span></td><td class='r' style='color:#0F7B5F;font-weight:600'>+157,576원</td></tr></tbody></table></div>
+    <div><div class="st neg">수익률 Worst 5</div>
+      <table><thead><tr><th>종목명</th><th class="r">수익률</th><th class="r">실현손익</th></tr></thead>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>한화시스템</td><td class='r' style='color:#C0392B'>-30.5%<br><span style='font-size:10px;color:#aaa;font-weight:400'>20일</span></td><td class='r' style='color:#C0392B;font-weight:600'>-628,392원</td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에코플라스틱</td><td class='r' style='color:#C0392B'>-28.9%<br><span style='font-size:10px;color:#aaa;font-weight:400'>10일</span></td><td class='r' style='color:#C0392B;font-weight:600'>-584,830원</td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>솔브레인</td><td class='r' style='color:#C0392B'>-23.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>21일</span></td><td class='r' style='color:#C0392B;font-weight:600'>-463,378원</td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>쎄트렉아이</td><td class='r' style='color:#C0392B'>-22.4%<br><span style='font-size:10px;color:#aaa;font-weight:400'>20일</span></td><td class='r' style='color:#C0392B;font-weight:600'>-2,202,956원</td></tr><tr><td class='n'><span style='font-size:10px;background:#0F7B5F;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에이치브이엠</td><td class='r' style='color:#C0392B'>-16.0%<br><span style='font-size:10px;color:#aaa;font-weight:400'>20일</span></td><td class='r' style='color:#C0392B;font-weight:600'>-1,587,963원</td></tr></tbody></table></div>
+  </div>
+  
+</div>
+
+</div>
+</body>
+</html>
