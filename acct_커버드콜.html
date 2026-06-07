@@ -6,35 +6,35 @@
 <title>커버드콜 리포트</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Malgun Gothic",sans-serif;background:#F2F3F5;color:#222;font-size:14px;line-height:1.65}
+body{font-family:"Malgun Gothic",sans-serif;background:#0C0C0D;color:#E4E4E7;font-size:14px;line-height:1.65}
 .wrap{max-width:1100px;margin:0 auto;padding:28px 16px}
-h1{font-size:24px;font-weight:700;margin-bottom:4px}
-.sub{color:#777;font-size:13px;margin-bottom:28px}
-.card{background:#fff;border-radius:12px;padding:22px 24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
-.ct{font-size:15px;font-weight:700;color:#333;border-left:4px solid #1D9E75;padding-left:10px;margin-bottom:18px}
+h1{font-size:24px;font-weight:700;color:#F4F4F5;margin-bottom:4px}
+.sub{color:#6B6B70;font-size:13px;margin-bottom:28px}
+.card{background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:22px 24px;margin-bottom:20px}
+.ct{font-size:15px;font-weight:700;color:#F4F4F5;border-left:4px solid #2DD4BF;padding-left:10px;margin-bottom:18px}
 /* 총자산 카드 */
-.total-card{background:linear-gradient(135deg,#1D9E75,#0F6E56);color:#fff;border-radius:12px;padding:22px 24px;margin-bottom:20px}
-.total-label{font-size:13px;opacity:.8;margin-bottom:6px}
-.total-amount{font-size:36px;font-weight:700}
-.total-sub{font-size:13px;opacity:.8;margin-top:6px}
+.total-card{background:#141416;border:1px solid #2A2A2E;color:#F4F4F5;border-radius:12px;padding:22px 24px;margin-bottom:20px}
+.total-label{font-size:13px;color:#8E8E93;margin-bottom:6px}
+.total-amount{font-size:36px;font-weight:700;color:#F4F4F5}
+.total-sub{font-size:13px;color:#6B6B70;margin-top:6px}
 /* 핵심성과지표 */
 .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}
-.metric{background:#F7F8FA;border-radius:8px;padding:14px 16px}
-.ml{font-size:12px;color:#888;margin-bottom:5px}
+.metric{background:#1C1C1F;border-radius:8px;padding:14px 16px}
+.ml{font-size:12px;color:#8E8E93;margin-bottom:5px}
 .mv{font-size:21px;font-weight:700}
-.pos{color:#0F7B5F}.neg{color:#C0392B}.neu{color:#222}
+.pos{color:#FF5A5A}.neg{color:#4A90E2}.neu{color:#F4F4F5}
 /* 매도 성과 */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.st{font-size:13px;font-weight:700;margin-bottom:10px}
+.st{font-size:13px;font-weight:700;margin-bottom:10px;color:#F4F4F5}
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{background:#F5F5F5;padding:9px 11px;font-weight:600;color:#555;border-bottom:2px solid #E8E8E8}
-td{padding:8px 11px;border-bottom:1px solid #F2F2F2}
-tr:hover td{background:#FAFAFA}
+th{background:#1C1C1F;padding:9px 11px;font-weight:600;color:#8E8E93;border-bottom:2px solid #2A2A2E}
+td{padding:8px 11px;border-bottom:1px solid #1F1F22}
+tr:hover td{background:#1C1C1F}
 .r{text-align:right}.n{max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 /* 보유 종목 */
-.note{font-size:12px;color:#999;margin-top:10px}
+.note{font-size:12px;color:#6B6B70;margin-top:10px}
 .cg{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
-.cl{font-size:12px;font-weight:600;color:#666;margin-bottom:8px}
+.cl{font-size:12px;font-weight:600;color:#8E8E93;margin-bottom:8px}
 @media(max-width:600px){.cg{grid-template-columns:1fr}}
 @media(max-width:700px){.two{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -42,7 +42,7 @@ tr:hover td{background:#FAFAFA}
 <body>
 <div class="wrap">
   <h1>커버드콜 성과 리포트</h1>
-  <div class="sub">생성: 2026.06.07 11:46 &nbsp;|&nbsp; 데이터 기간: 2026.05.25 ~ 2026.05.28</div>
+  <div class="sub">생성: 2026.06.07 21:18 &nbsp;|&nbsp; 데이터 기간: 2026.05.25 ~ 2026.05.28</div>
   <div class="total-card">
   <div class="total-label">총 자산</div>
   <div class="total-amount">5,108,400원</div>
@@ -53,54 +53,54 @@ tr:hover td{background:#FAFAFA}
   <div class="metrics"><div class="metric">
   <div class="ml">순 입금액 (총납입금)</div>
   <div class="mv pos">+4,997,090원</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">KRW + USD (현재환율)</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">KRW + USD (현재환율)</div>
 </div>
 <div class="metric">
   <div class="ml">평가 금액</div>
   <div class="mv neu">5,108,400원</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">현재가 기준</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 기준</div>
 </div>
 <div class="metric">
   <div class="ml">평가 손익</div>
   <div class="mv pos">+111,310원</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">보유종목 미실현손익 합계</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">보유종목 미실현손익 합계</div>
 </div>
 <div class="metric">
   <div class="ml">실현 손익</div>
   <div class="mv neu">0원</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">국내 + 해외 (거래당시환율)</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">국내 + 해외 (거래당시환율)</div>
 </div>
 <div class="metric">
   <div class="ml">분배금 + 이자</div>
   <div class="mv neu">0원</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">KRW + USD 환산</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">KRW + USD 환산</div>
 </div>
 <div class="metric">
   <div class="ml">총 손익</div>
   <div class="mv pos">+111,310원</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
 </div>
 <div class="metric">
   <div class="ml">누적 수익률</div>
   <div class="mv pos">+2.2%</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">총손익 ÷ 순입금액</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">총손익 ÷ 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">Modified Dietz</div>
   <div class="mv pos">+2.2%</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">시간가중 수익률</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">시간가중 수익률</div>
 </div>
 <div class="metric">
   <div class="ml">연평균 성장률 (CAGR)</div>
   <div class="mv pos">+1361.7%</div>
-  <div style="font-size:11px;color:#aaa;margin-top:3px">0.0년 기준</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">0.0년 기준</div>
 </div>
 </div>
 </div>
 
   
   <div class="card">
-  <div class="ct">포트폴리오 구성 <span style="font-size:11px;color:#aaa;font-weight:400">(취득원가 기준)</span></div>
+  <div class="ct">포트폴리오 구성 <span style="font-size:11px;color:#6B6B70;font-weight:400">(취득원가 기준)</span></div>
   <div class="cg">
     <div>
       <div class="cl">보유 비중</div>
@@ -109,7 +109,7 @@ tr:hover td{background:#FAFAFA}
 (function(){
   var labels=["TIGER 반도체TOP10"];
   var vals=[4997090];
-  var colors=["#1D9E75"];
+  var colors=["#2DD4BF"];
   var cv=document.getElementById('cDonut_port');
   function resize(){
     var w=cv.parentElement.offsetWidth||300;
@@ -131,7 +131,7 @@ tr:hover td{background:#FAFAFA}
       ctx.beginPath();ctx.moveTo(cx,cy);
       ctx.arc(cx,cy,r,start,start+angle);ctx.closePath();
       ctx.fillStyle=colors[i%colors.length];ctx.fill();
-      ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.stroke();
+      ctx.strokeStyle='#141416';ctx.lineWidth=2;ctx.stroke();
       if(v/total>0.05){
         var mid=start+angle/2;
         var lx=cx+Math.cos(mid)*(r+ir)/2,ly=cy+Math.sin(mid)*(r+ir)/2;
@@ -141,10 +141,10 @@ tr:hover td{background:#FAFAFA}
       start+=angle;
     });
     ctx.beginPath();ctx.arc(cx,cy,ir,0,Math.PI*2);
-    ctx.fillStyle='#fff';ctx.fill();
-    ctx.fillStyle='#333';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
+    ctx.fillStyle='#141416';ctx.fill();
+    ctx.fillStyle='#F4F4F5';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
     ctx.fillText('보유 비중',cx,cy-4);
-    ctx.font='10px sans-serif';ctx.fillStyle='#888';
+    ctx.font='10px sans-serif';ctx.fillStyle='#8E8E93';
     ctx.fillText('1종목',cx,cy+12);
     ctx.restore();
   }
@@ -155,7 +155,7 @@ tr:hover td{background:#FAFAFA}
     </div>
     <div style="display:flex;flex-direction:column;justify-content:center">
       <table><thead><tr><th>종목명</th><th class="r">평가금액</th><th class="r">비중</th></tr></thead>
-      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#1D9E75;margin-right:5px;vertical-align:middle'></span>TIGER 반도체TOP10커버드콜액티브</td><td class='r'>500만원</td><td class='r'>100.0%</td></tr></tbody></table>
+      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>TIGER 반도체TOP10커버드콜액티브</td><td class='r'>500만원</td><td class='r'>100.0%</td></tr></tbody></table>
     </div>
   </div>
 </div>
@@ -166,19 +166,19 @@ tr:hover td{background:#FAFAFA}
     <th>종목명</th><th class="c">코드</th><th class="r">수량</th>
     <th class="r">평단가</th><th class="r">현재가</th><th class="r">평가금액(원)</th>
     <th class="r">미실현손익</th><th class="r">수익률</th><th class="r">보유기간</th>
-  </tr></thead><tbody><tr><td colspan='7' style='color:#aaa;text-align:center'>보유 없음</td></tr><tr><td class='n'>TIGER 반도체TOP10커버드콜액티브</td><td class='r'>0177R0</td><td class='r'>344</td><td class='r'>14,526원</td><td class='r'>14,850원</td><td class='r'>5,108,400원</td><td class='r' style='color:#0F7B5F;font-weight:600'>+111,310원</td><td class='r' style='color:#0F7B5F;font-weight:600'>+2.2%</td><td class='r' style='color:#888'>10일</td></tr></tbody></table>
+  </tr></thead><tbody><tr><td colspan='7' style='color:#6B6B70;text-align:center'>보유 없음</td></tr><tr><td class='n'>TIGER 반도체TOP10커버드콜액티브</td><td class='r'>0177R0</td><td class='r'>344</td><td class='r'>14,526원</td><td class='r'>14,850원</td><td class='r'>5,108,400원</td><td class='r' style='color:#FF5A5A;font-weight:600'>+111,310원</td><td class='r' style='color:#FF5A5A;font-weight:600'>+2.2%</td><td class='r' style='color:#8E8E93'>10일</td></tr></tbody></table>
   </div>
   <div class="note">✅ 전 종목 현재가 조회 완료</div>
 </div>
 
   <div class="card">
-  <div class="ct">일별 총손익 &amp; 총자산 <span style="font-size:11px;color:#aaa;font-weight:400">단위: 만원 · 최근 60일</span></div>
+  <div class="ct">일별 총손익 &amp; 총자산 <span style="font-size:11px;color:#6B6B70;font-weight:400">단위: 만원 · 최근 60일</span></div>
   <div style="position:relative">
 <canvas id="cDailyBar" style="width:100%;height:300px;display:block"></canvas>
-<div id="cDailyTip" style="position:absolute;top:10px;left:10px;background:rgba(255,255,255,.97);border:1px solid #e0e0e0;border-radius:8px;padding:8px 12px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+<div id="cDailyTip" style="position:absolute;top:10px;left:10px;background:rgba(28,28,31,.97);border:1px solid #3A3A3E;color:#E4E4E7;border-radius:8px;padding:8px 12px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
 </div>
-<div style="display:flex;gap:16px;justify-content:center;margin-top:8px;font-size:11px;color:#666">
-  <span><span style="display:inline-block;width:10px;height:10px;background:#1D9E75;border-radius:2px;vertical-align:middle"></span> 일별 손익(막대)</span>
+<div style="display:flex;gap:16px;justify-content:center;margin-top:8px;font-size:11px;color:#8E8E93">
+  <span><span style="display:inline-block;width:10px;height:10px;background:#FF5A5A;border-radius:2px;vertical-align:middle"></span> 일별 손익(막대)</span>
   <span><span style="display:inline-block;width:14px;height:3px;background:#378ADD;vertical-align:middle"></span> 총자산(선)</span>
 </div>
 <script>
@@ -219,9 +219,9 @@ tr:hover td{background:#FAFAFA}
     // 좌축 격자
     niceTicks(lMn,lMx,5).forEach(function(v){
       var y=pyL(v);
-      ctx.strokeStyle='#f0f0f0';ctx.lineWidth=1;
+      ctx.strokeStyle='#26262A';ctx.lineWidth=1;
       ctx.beginPath();ctx.moveTo(PAD.l,y);ctx.lineTo(rW-PAD.r,y);ctx.stroke();
-      ctx.fillStyle='#aaa';ctx.font='9px sans-serif';ctx.textAlign='right';
+      ctx.fillStyle='#8E8E93';ctx.font='9px sans-serif';ctx.textAlign='right';
       ctx.fillText(fmtK(v),PAD.l-4,y+3);
     });
     // 우축 라벨
@@ -234,13 +234,13 @@ tr:hover td{background:#FAFAFA}
     }
     // 0선
     var y0=pyL(0);
-    ctx.strokeStyle='#ccc';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(PAD.l,y0);ctx.lineTo(rW-PAD.r,y0);ctx.stroke();
+    ctx.strokeStyle='#3A3A3E';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(PAD.l,y0);ctx.lineTo(rW-PAD.r,y0);ctx.stroke();
     // 막대
     var bw=Math.max(2,(rW-PAD.l-PAD.r)/n*0.55);
     pnl.forEach(function(v,i){
       if(v===0)return;
       var x=px(i),y=pyL(v),h=Math.abs(y0-y)||1;
-      ctx.fillStyle=v>=0?(i===hl?'#0a6647':'#1D9E75'):(i===hl?'#a02020':'#C0392B');
+      ctx.fillStyle=v>=0?(i===hl?'#ff8a8a':'#FF5A5A'):(i===hl?'#6aa8e8':'#4A90E2');
       ctx.fillRect(x-bw/2,Math.min(y,y0),bw,h);
     });
     // 평가금액 꺾은선
@@ -273,7 +273,7 @@ tr:hover td{background:#FAFAFA}
     if(i<0||i>=n){tip.style.opacity=0;draw(-1);return;}
     draw(i);
     var v=pnl[i]*10000;var eq=equity[i]*10000;
-    var clr=v>=0?'#0F7B5F':'#C0392B';
+    var clr=v>=0?'#FF5A5A':'#4A90E2';
     var html='<b>'+labels[i]+'</b>';
     if(v!==0)html+='<br>손익 <span style="color:'+clr+'">'+(v>=0?'+':'')+v.toLocaleString()+'원</span>';
     if(hasEquity&&eq>0)html+='<br>총자산 <span style="color:#378ADD">'+eq.toLocaleString()+'원</span>';
