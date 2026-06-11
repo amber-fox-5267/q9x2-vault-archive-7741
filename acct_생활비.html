@@ -42,11 +42,11 @@ tr:hover td{background:#1C1C1F}
 <body>
 <div class="wrap">
   <h1>생활비 성과 리포트</h1>
-  <div class="sub">생성: 2026.06.11 07:42 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.06.09</div>
+  <div class="sub">생성: 2026.06.11 15:00 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.06.11</div>
   <div class="total-card">
   <div class="total-label">총 자산</div>
-  <div class="total-amount">66,318,692원</div>
-  <div class="total-sub">예수금 USD 43,501.93 × 1,524 = 66,318,692원 (현재가 미조회로 주식 미포함)</div>
+  <div class="total-amount">60,782,394원</div>
+  <div class="total-sub">주식평가 55,429,356원 + 예수금 5,353,038원</div>
 </div>
   <div class="card">
   <div class="ct">핵심 성과 지표</div>
@@ -57,13 +57,13 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">평가 금액</div>
-  <div class="mv neu">미조회</div>
-  <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 미조회</div>
+  <div class="mv neu">55,429,356원</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 기준</div>
 </div>
 <div class="metric">
   <div class="ml">평가 손익</div>
-  <div class="mv neu">미조회</div>
-  
+  <div class="mv neg">-5,536,298원</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">보유종목 미실현손익 합계</div>
 </div>
 <div class="metric">
   <div class="ml">실현 손익</div>
@@ -77,39 +77,98 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">총 손익</div>
-  <div class="mv pos">+34,963,507원</div>
+  <div class="mv pos">+29,427,209원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
 </div>
 <div class="metric">
   <div class="ml">누적 수익률</div>
-  <div class="mv pos">+178.6%</div>
+  <div class="mv pos">+150.3%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">총손익 ÷ 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">Modified Dietz</div>
-  <div class="mv neu">—</div>
+  <div class="mv pos">+678.8%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">시간가중 수익률</div>
 </div>
 <div class="metric">
   <div class="ml">연평균 성장률 (CAGR)</div>
-  <div class="mv neu">—</div>
+  <div class="mv pos">+30.5%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">3.9년 기준</div>
 </div>
 </div>
 </div>
 
   
-  
   <div class="card">
-  <div class="ct">보유 종목 상세 (0종목)</div>
+  <div class="ct">포트폴리오 구성 <span style="font-size:11px;color:#6B6B70;font-weight:400">(현재가 기준)</span></div>
+  <div class="cg">
+    <div>
+      <div class="cl">보유 비중</div>
+      <canvas id="cDonut_port" style="width:100%;height:280px;display:block"></canvas>
+      <script>
+(function(){
+  var labels=["디렉시온 마이크론 테크놀로", "TRADR 샌디스크 2배 "];
+  var vals=[28078729, 27350628];
+  var colors=["#2DD4BF", "#378ADD"];
+  var cv=document.getElementById('cDonut_port');
+  function resize(){
+    var w=cv.parentElement.offsetWidth||300;
+    var dpr=window.devicePixelRatio||1;
+    cv.width=w*dpr;cv.height=280*dpr;cv.style.width=w+'px';cv.style.height='280px';
+    draw();
+  }
+  function draw(){
+    var dpr=window.devicePixelRatio||1;
+    var rW=cv.width/dpr,rH=cv.height/dpr;
+    var ctx=cv.getContext('2d');
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.save();ctx.scale(dpr,dpr);
+    var total=vals.reduce(function(a,b){return a+b;},0);
+    var cx=rW/2,cy=rH/2-10,r=Math.min(rW,rH)*0.36,ir=r*0.58;
+    var start=-Math.PI/2;
+    vals.forEach(function(v,i){
+      var angle=v/total*Math.PI*2;
+      ctx.beginPath();ctx.moveTo(cx,cy);
+      ctx.arc(cx,cy,r,start,start+angle);ctx.closePath();
+      ctx.fillStyle=colors[i%colors.length];ctx.fill();
+      ctx.strokeStyle='#141416';ctx.lineWidth=2;ctx.stroke();
+      if(v/total>0.05){
+        var mid=start+angle/2;
+        var lx=cx+Math.cos(mid)*(r+ir)/2,ly=cy+Math.sin(mid)*(r+ir)/2;
+        ctx.fillStyle='#fff';ctx.font='bold 10px sans-serif';ctx.textAlign='center';
+        ctx.fillText((v/total*100).toFixed(1)+'%',lx,ly+4);
+      }
+      start+=angle;
+    });
+    ctx.beginPath();ctx.arc(cx,cy,ir,0,Math.PI*2);
+    ctx.fillStyle='#141416';ctx.fill();
+    ctx.fillStyle='#F4F4F5';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
+    ctx.fillText('보유 비중',cx,cy-4);
+    ctx.font='10px sans-serif';ctx.fillStyle='#8E8E93';
+    ctx.fillText('2종목',cx,cy+12);
+    ctx.restore();
+  }
+  window.addEventListener('resize',resize);
+  resize();
+})();
+      </script>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center">
+      <table><thead><tr><th>종목명</th><th class="r">평가금액</th><th class="r">비중</th></tr></thead>
+      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r'>2808만원</td><td class='r'>50.7%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#378ADD;margin-right:5px;vertical-align:middle'></span>TRADR 샌디스크 2배 ETF</td><td class='r'>2735만원</td><td class='r'>49.3%</td></tr></tbody></table>
+    </div>
+  </div>
+</div>
+  <div class="card">
+  <div class="ct">보유 종목 상세 (2종목)</div>
   <div style="overflow-x:auto">
   <table><thead><tr>
     <th>종목명</th><th class="c">코드</th><th class="r">수량</th>
     <th class="r">평단가</th><th class="r">현재가</th><th class="r">평가금액(원)</th>
     <th class="r">미실현손익</th><th class="r">수익률</th><th class="r">보유기간</th>
-  </tr></thead><tbody><tr><td colspan='7' style='color:#6B6B70;text-align:center'>보유 없음</td></tr></tbody></table>
+  </tr></thead><tbody><tr><td class='n'>TRADR 샌디스크 2배 ETF</td><td class='r'>SNXX US</td><td class='r'>708.0000</td><td class='r'>28.3947 USD</td><td class='r'>25 USD</td><td class='r'>27,350,628</td><td class='r' style='color:#4A90E2;font-weight:600'>-3,297,112</td><td class='r' style='color:#4A90E2;font-weight:600'>-10.8%</td><td class='r' style='color:#8E8E93'>0일</td></tr><tr><td class='n'>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r'>MUU US</td><td class='r'>24.0000</td><td class='r'>828.6300 USD</td><td class='r'>767 USD</td><td class='r'>28,078,729</td><td class='r' style='color:#4A90E2;font-weight:600'>-2,239,186</td><td class='r' style='color:#4A90E2;font-weight:600'>-7.4%</td><td class='r' style='color:#8E8E93'>0일</td></tr></tbody></table>
   </div>
-  <div class="note">※ 현재가 미조회 — 평가금액은 취득원가 기준</div>
+  <div class="note">✅ 전 종목 현재가 조회 완료</div>
 </div>
 
   <div class="card">
@@ -126,7 +185,7 @@ tr:hover td{background:#1C1C1F}
 (function(){
   var labels=["04-13", "04-14", "04-15", "04-16", "04-17", "04-20", "04-21", "04-22", "04-23", "04-24", "04-27", "04-28", "04-29", "04-30", "05-01", "05-04", "05-05", "05-06", "05-07", "05-08", "05-11", "05-12", "05-13", "05-14", "05-15", "05-18", "05-19", "05-20", "05-21", "05-22", "05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-03", "06-04", "06-05", "06-08", "06-09", "06-10"];
   var pnl=[0, 0, 0, 0, 0, 0, 0, 0, 0, -50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4172, -2, 0, 0, 0, 0, 0, 0, 377, 0, 0, 0, -22, 0];
-  var equity=[4780, 5244, 4900, 5149, 7215, 5250, 5265, 6099, 5572, 5987, 6306, 5987, 5991, 6679, 6902, 6964, 8199, 9355, 8580, 10546, 10988, 8640, 10006, 10226, 8461, 8024, 7804, 9410, 9492, 7852, 7919, 7986, 8162, 8263, 8487, 8731, 12563, 11271, 8479, 9718, 6631, 6631];
+  var equity=[4780, 5244, 4900, 5149, 7215, 5250, 5265, 6099, 5572, 5987, 6306, 5987, 5991, 6679, 6902, 6964, 8199, 9355, 8580, 10546, 10988, 8640, 10006, 10226, 8461, 8024, 7804, 9410, 9492, 7852, 7919, 7986, 8162, 8263, 8487, 8731, 12563, 11271, 8479, 9718, 9848, 9848];
   var hasEquity=true;
   var cv=document.getElementById('cDailyBar');
   var tip=document.getElementById('cDailyTip');

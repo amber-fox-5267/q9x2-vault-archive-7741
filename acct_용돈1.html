@@ -42,11 +42,11 @@ tr:hover td{background:#1C1C1F}
 <body>
 <div class="wrap">
   <h1>용돈1 성과 리포트</h1>
-  <div class="sub">생성: 2026.06.11 07:42 &nbsp;|&nbsp; 데이터 기간: 2022.01.04 ~ 2026.06.09</div>
+  <div class="sub">생성: 2026.06.11 15:00 &nbsp;|&nbsp; 데이터 기간: 2022.01.04 ~ 2026.06.11</div>
   <div class="total-card">
   <div class="total-label">총 자산</div>
-  <div class="total-amount">9,079,514원</div>
-  <div class="total-sub">주식평가 2,212,846원 + 예수금 6,866,668원</div>
+  <div class="total-amount">8,361,974원</div>
+  <div class="total-sub">주식평가 8,346,957원 + 예수금 15,016원</div>
 </div>
   <div class="card">
   <div class="ct">핵심 성과 지표</div>
@@ -57,12 +57,12 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">평가 금액</div>
-  <div class="mv neu">2,212,846원</div>
+  <div class="mv neu">8,346,957원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 기준</div>
 </div>
 <div class="metric">
   <div class="ml">평가 손익</div>
-  <div class="mv pos">+1,946,287원</div>
+  <div class="mv pos">+1,228,747원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">보유종목 미실현손익 합계</div>
 </div>
 <div class="metric">
@@ -77,22 +77,22 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">총 손익</div>
-  <div class="mv neg">-7,249,328원</div>
+  <div class="mv neg">-7,966,869원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
 </div>
 <div class="metric">
   <div class="ml">누적 수익률</div>
-  <div class="mv neg">-28.6%</div>
+  <div class="mv neg">-31.5%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">총손익 ÷ 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">Modified Dietz</div>
-  <div class="mv neg">-110.1%</div>
+  <div class="mv neg">-47.2%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">시간가중 수익률</div>
 </div>
 <div class="metric">
   <div class="ml">연평균 성장률 (CAGR)</div>
-  <div class="mv neg">-42.3%</div>
+  <div class="mv neg">-22.1%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">4.4년 기준</div>
 </div>
 </div>
@@ -107,9 +107,9 @@ tr:hover td{background:#1C1C1F}
       <canvas id="cDonut_port" style="width:100%;height:280px;display:block"></canvas>
       <script>
 (function(){
-  var labels=["CSOP SK하이닉스 2배"];
-  var vals=[2212846];
-  var colors=["#2DD4BF"];
+  var labels=["TRADR 샌디스크 2배 ", "CSOP SK하이닉스 2배"];
+  var vals=[6335456, 2011501];
+  var colors=["#2DD4BF", "#378ADD"];
   var cv=document.getElementById('cDonut_port');
   function resize(){
     var w=cv.parentElement.offsetWidth||300;
@@ -145,7 +145,7 @@ tr:hover td{background:#1C1C1F}
     ctx.fillStyle='#F4F4F5';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
     ctx.fillText('보유 비중',cx,cy-4);
     ctx.font='10px sans-serif';ctx.fillStyle='#8E8E93';
-    ctx.fillText('1종목',cx,cy+12);
+    ctx.fillText('2종목',cx,cy+12);
     ctx.restore();
   }
   window.addEventListener('resize',resize);
@@ -155,18 +155,18 @@ tr:hover td{background:#1C1C1F}
     </div>
     <div style="display:flex;flex-direction:column;justify-content:center">
       <table><thead><tr><th>종목명</th><th class="r">평가금액</th><th class="r">비중</th></tr></thead>
-      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>CSOP SK하이닉스 2배 ETF</td><td class='r'>221만원</td><td class='r'>100.0%</td></tr></tbody></table>
+      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>TRADR 샌디스크 2배 ETF</td><td class='r'>634만원</td><td class='r'>75.9%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#378ADD;margin-right:5px;vertical-align:middle'></span>CSOP SK하이닉스 2배 ETF</td><td class='r'>201만원</td><td class='r'>24.1%</td></tr></tbody></table>
     </div>
   </div>
 </div>
   <div class="card">
-  <div class="ct">보유 종목 상세 (1종목)</div>
+  <div class="ct">보유 종목 상세 (2종목)</div>
   <div style="overflow-x:auto">
   <table><thead><tr>
     <th>종목명</th><th class="c">코드</th><th class="r">수량</th>
     <th class="r">평단가</th><th class="r">현재가</th><th class="r">평가금액(원)</th>
     <th class="r">미실현손익</th><th class="r">수익률</th><th class="r">보유기간</th>
-  </tr></thead><tbody><tr><td class='n'>CSOP SK하이닉스 2배 ETF</td><td class='r'>07709 HK</td><td class='r'>100.0000</td><td class='r'>13.7023 HKD</td><td class='r'>114 HKD</td><td class='r'>2,212,846</td><td class='r' style='color:#FF5A5A;font-weight:600'>+1,946,287</td><td class='r' style='color:#FF5A5A;font-weight:600'>+730.2%</td><td class='r' style='color:#8E8E93'>199일</td></tr></tbody></table>
+  </tr></thead><tbody><tr><td class='n'>CSOP SK하이닉스 2배 ETF</td><td class='r'>07709 HK</td><td class='r'>100.0000</td><td class='r'>13.7023 HKD</td><td class='r'>103 HKD</td><td class='r'>2,011,501</td><td class='r' style='color:#FF5A5A;font-weight:600'>+1,744,942</td><td class='r' style='color:#FF5A5A;font-weight:600'>+654.6%</td><td class='r' style='color:#8E8E93'>199일</td></tr><tr><td class='n'>TRADR 샌디스크 2배 ETF</td><td class='r'>SNXX US</td><td class='r'>164.0000</td><td class='r'>27.4046 USD</td><td class='r'>25 USD</td><td class='r'>6,335,456</td><td class='r' style='color:#4A90E2;font-weight:600'>-516,196</td><td class='r' style='color:#4A90E2;font-weight:600'>-7.5%</td><td class='r' style='color:#8E8E93'>0일</td></tr></tbody></table>
   </div>
   <div class="note">✅ 전 종목 현재가 조회 완료</div>
 </div>
@@ -183,9 +183,9 @@ tr:hover td{background:#1C1C1F}
 </div>
 <script>
 (function(){
-  var labels=["04-13", "04-14", "04-15", "04-16", "04-17", "04-20", "04-21", "04-22", "04-23", "04-24", "04-27", "04-28", "04-29", "04-30", "05-01", "05-04", "05-05", "05-06", "05-07", "05-08", "05-11", "05-12", "05-13", "05-14", "05-15", "05-18", "05-19", "05-20", "05-21", "05-22", "05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-03", "06-04", "06-05", "06-08", "06-09", "06-10"];
-  var pnl=[0, 0, 0, 0, 0, 0, 0, 0, 0, -17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 394, 0, 0, 0, 0, 0, 0, 0, 79, 0, 0, 0, 42, 0];
-  var equity=[105, 113, 111, 116, 113, 117, 247, 247, 252, 304, 302, 288, 304, 315, 331, 346, 386, 460, 449, 531, 583, 543, 575, 562, 499, 482, 467, 624, 740, 532, 606, 641, 676, 684, 698, 701, 1118, 1051, 819, 865, 907, 907];
+  var labels=["04-13", "04-14", "04-15", "04-16", "04-17", "04-20", "04-21", "04-22", "04-23", "04-24", "04-27", "04-28", "04-29", "04-30", "05-01", "05-04", "05-05", "05-06", "05-07", "05-08", "05-11", "05-12", "05-13", "05-14", "05-15", "05-18", "05-19", "05-20", "05-21", "05-22", "05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-03", "06-04", "06-05", "06-08", "06-09", "06-10", "06-11"];
+  var pnl=[0, 0, 0, 0, 0, 0, 0, 0, 0, -17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 394, 0, 0, 0, 0, 0, 0, 0, 79, 0, 0, 0, 42, 0, 0];
+  var equity=[105, 113, 111, 116, 113, 117, 247, 247, 252, 304, 302, 288, 304, 315, 331, 346, 386, 460, 449, 531, 583, 543, 575, 562, 499, 482, 467, 624, 740, 532, 606, 641, 676, 684, 698, 701, 1118, 1051, 819, 865, 907, 877, 509];
   var hasEquity=true;
   var cv=document.getElementById('cDailyBar');
   var tip=document.getElementById('cDailyTip');
