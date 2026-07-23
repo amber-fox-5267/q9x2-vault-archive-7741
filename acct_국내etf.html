@@ -42,32 +42,32 @@ tr:hover td{background:#1C1C1F}
 <body>
 <div class="wrap">
   <h1>국내etf 성과 리포트</h1>
-  <div class="sub">생성: 2026.07.23 18:10 &nbsp;|&nbsp; 데이터 기간: 2026.05.26 ~ 2026.07.16</div>
+  <div class="sub">생성: 2026.07.23 21:06 &nbsp;|&nbsp; 데이터 기간: 2026.05.26 ~ 2026.07.23</div>
   <div class="total-card">
   <div class="total-label">총 자산</div>
-  <div class="total-amount">28,629,268원</div>
-  <div class="total-sub">주식평가 5,149,545원 + 예수금 23,479,723원</div>
+  <div class="total-amount">48,810,809원</div>
+  <div class="total-sub">주식평가 35,586,600원 + 예수금 13,224,209원</div>
 </div>
   <div class="card">
   <div class="ct">핵심 성과 지표</div>
   <div class="metrics"><div class="metric">
   <div class="ml">순 입금액 (총납입금)</div>
-  <div class="mv pos">+48,050,091원</div>
+  <div class="mv pos">+48,150,125원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">KRW + USD (현재환율)</div>
 </div>
 <div class="metric">
   <div class="ml">평가 금액</div>
-  <div class="mv neu">5,149,545원</div>
+  <div class="mv neu">35,586,600원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 기준</div>
 </div>
 <div class="metric">
   <div class="ml">평가 손익</div>
-  <div class="mv neg">-845,740원</div>
+  <div class="mv pos">+2,634,075원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">보유종목 미실현손익 합계</div>
 </div>
 <div class="metric">
   <div class="ml">실현 손익</div>
-  <div class="mv pos">+1,186,457원</div>
+  <div class="mv pos">+2,321,077원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">국내 + 해외 (거래당시환율)</div>
 </div>
 <div class="metric">
@@ -77,23 +77,23 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">총 손익</div>
-  <div class="mv pos">+342,990원</div>
+  <div class="mv pos">+4,957,425원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
 </div>
 <div class="metric">
   <div class="ml">누적 수익률</div>
-  <div class="mv pos">+0.7%</div>
+  <div class="mv pos">+10.3%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">총손익 ÷ 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">Modified Dietz</div>
-  <div class="mv neg">-124.0%</div>
+  <div class="mv neg">-34.7%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">시간가중 수익률</div>
 </div>
 <div class="metric">
   <div class="ml">연평균 성장률 (CAGR)</div>
-  <div class="mv neg">-100.0%</div>
-  <div style="font-size:11px;color:#6B6B70;margin-top:3px">0.1년 기준</div>
+  <div class="mv neg">-85.1%</div>
+  <div style="font-size:11px;color:#6B6B70;margin-top:3px">0.2년 기준</div>
 </div>
 </div>
 </div>
@@ -107,9 +107,9 @@ tr:hover td{background:#1C1C1F}
       <canvas id="cDonut_port" style="width:100%;height:280px;display:block"></canvas>
       <script>
 (function(){
-  var labels=["하나금융지주", "메리츠금융지주", "KB금융", "신한지주", "PLUS 삼성전자선물단일종", "SOL SK하이닉스선물단일"];
-  var vals=[4965890, 4952290, 4945690, 4919690, 3988120, 2007165];
-  var colors=["#2DD4BF", "#378ADD", "#BA7517", "#534AB7", "#D85A30", "#C04DB7"];
+  var labels=["KODEX SK하이닉스단일", "하나금융지주", "메리츠금융지주"];
+  var vals=[32952525, 21676399, 6801270];
+  var colors=["#2DD4BF", "#378ADD", "#BA7517"];
   var cv=document.getElementById('cDonut_port');
   function resize(){
     var w=cv.parentElement.offsetWidth||300;
@@ -145,7 +145,7 @@ tr:hover td{background:#1C1C1F}
     ctx.fillStyle='#F4F4F5';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
     ctx.fillText('보유 비중',cx,cy-4);
     ctx.font='10px sans-serif';ctx.fillStyle='#8E8E93';
-    ctx.fillText('6종목',cx,cy+12);
+    ctx.fillText('3종목',cx,cy+12);
     ctx.restore();
   }
   window.addEventListener('resize',resize);
@@ -155,18 +155,18 @@ tr:hover td{background:#1C1C1F}
     </div>
     <div style="display:flex;flex-direction:column;justify-content:center">
       <table><thead><tr><th>종목명</th><th class="r">평가금액</th><th class="r">비중</th></tr></thead>
-      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>하나금융지주</td><td class='r'>497만원</td><td class='r'>19.3%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#378ADD;margin-right:5px;vertical-align:middle'></span>메리츠금융지주</td><td class='r'>495만원</td><td class='r'>19.2%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#BA7517;margin-right:5px;vertical-align:middle'></span>KB금융</td><td class='r'>495만원</td><td class='r'>19.2%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#534AB7;margin-right:5px;vertical-align:middle'></span>신한지주</td><td class='r'>492만원</td><td class='r'>19.1%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#D85A30;margin-right:5px;vertical-align:middle'></span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r'>399만원</td><td class='r'>15.5%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#C04DB7;margin-right:5px;vertical-align:middle'></span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r'>201만원</td><td class='r'>7.8%</td></tr></tbody></table>
+      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>KODEX SK하이닉스단일종목레버리지</td><td class='r'>3295만원</td><td class='r'>53.6%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#378ADD;margin-right:5px;vertical-align:middle'></span>하나금융지주</td><td class='r'>2168만원</td><td class='r'>35.3%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#BA7517;margin-right:5px;vertical-align:middle'></span>메리츠금융지주</td><td class='r'>680만원</td><td class='r'>11.1%</td></tr></tbody></table>
     </div>
   </div>
 </div>
   <div class="card">
-  <div class="ct">보유 종목 상세 (6종목)</div>
+  <div class="ct">보유 종목 상세 (3종목)</div>
   <div style="overflow-x:auto">
   <table><thead><tr>
     <th>종목명</th><th class="c">코드</th><th class="r">수량</th>
     <th class="r">평단가</th><th class="r">현재가</th><th class="r">평가금액(원)</th>
     <th class="r">미실현손익</th><th class="r">수익률</th><th class="r">보유기간</th>
-  </tr></thead><tbody><tr><td colspan='7' style='color:#6B6B70;text-align:center'>보유 없음</td></tr><tr><td class='n'>PLUS 삼성전자선물단일종목인버스2X</td><td class='r'>0193L0</td><td class='r'>232</td><td class='r'>17,190원</td><td class='r'>15,045원</td><td class='r'>3,490,440원</td><td class='r' style='color:#4A90E2;font-weight:600'>-497,680원</td><td class='r' style='color:#4A90E2;font-weight:600'>-12.5%</td><td class='r' style='color:#8E8E93'>8일</td></tr><tr><td class='n'>SOL SK하이닉스선물단일종목인버스2X</td><td class='r'>0197X0</td><td class='r'>161</td><td class='r'>12,467원</td><td class='r'>10,305원</td><td class='r'>1,659,105원</td><td class='r' style='color:#4A90E2;font-weight:600'>-348,060원</td><td class='r' style='color:#4A90E2;font-weight:600'>-17.3%</td><td class='r' style='color:#8E8E93'>7일</td></tr><tr><td class='n'>신한지주</td><td class='r'>055550</td><td class='r'>44</td><td class='r'>111,811원</td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r' style='color:#8E8E93'>8일</td></tr><tr><td class='n'>하나금융지주</td><td class='r'>086790</td><td class='r'>37</td><td class='r'>134,213원</td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r' style='color:#8E8E93'>8일</td></tr><tr><td class='n'>KB금융</td><td class='r'>105560</td><td class='r'>26</td><td class='r'>190,219원</td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r' style='color:#8E8E93'>8일</td></tr><tr><td class='n'>메리츠금융지주</td><td class='r'>138040</td><td class='r'>42</td><td class='r'>117,912원</td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r' style='color:#8E8E93'>8일</td></tr></tbody></table>
+  </tr></thead><tbody><tr><td colspan='7' style='color:#6B6B70;text-align:center'>보유 없음</td></tr><tr><td class='n'>KODEX SK하이닉스단일종목레버리지</td><td class='r'>0193T0</td><td class='r'>2290</td><td class='r'>14,390원</td><td class='r'>15,540원</td><td class='r'>35,586,600원</td><td class='r' style='color:#FF5A5A;font-weight:600'>+2,634,075원</td><td class='r' style='color:#FF5A5A;font-weight:600'>+8.0%</td><td class='r' style='color:#8E8E93'>0일</td></tr><tr><td class='n'>하나금융지주</td><td class='r'>086790</td><td class='r'>159</td><td class='r'>136,330원</td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r' style='color:#8E8E93'>8일</td></tr><tr><td class='n'>메리츠금융지주</td><td class='r'>138040</td><td class='r'>58</td><td class='r'>117,263원</td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r'><span style='color:#bbb'>미조회</span></td><td class='r' style='color:#8E8E93'>8일</td></tr></tbody></table>
   </div>
   <div class="note">✅ 전 종목 현재가 조회 완료</div>
 </div>
@@ -184,8 +184,8 @@ tr:hover td{background:#1C1C1F}
 <script>
 (function(){
   var labels=["05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-04", "06-05", "06-08", "06-09", "06-10", "06-11", "06-12", "06-15", "06-16", "06-17", "06-18", "06-19", "06-22", "06-23", "06-24", "06-25", "06-26", "06-29", "06-30", "07-01", "07-02", "07-03", "07-06", "07-07", "07-08", "07-09", "07-10", "07-13", "07-14", "07-15", "07-16", "07-20", "07-21", "07-22", "07-23"];
-  var pnl=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 784, 0, 0, -668, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0];
-  var equity=[1268, 1268, 1268, 0, 0, 0, 0, 0, 0, 3000, 3000, 1204, 1047, 1054, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 5061, 5061, 2, 4391, 4391, 4391, 4391, 4391, 4391, 4395, 4395, 4821, 4874, 4838, 4787, 4790, 4750];
+  var pnl=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 784, 0, 0, -668, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -113, 226];
+  var equity=[1268, 1268, 1268, 670, 697, 684, 651, 519, 439, 3577, 3487, 2620, 2578, 2770, 2477, 2771, 3130, 3324, 3730, 2782, 2817, 3543, 2930, 2856, 5061, 5061, 1544, 4391, 4391, 4391, 4391, 4391, 4391, 4395, 4395, 3543, 3350, 1322, 1855, 3063, 4169];
   var hasEquity=true;
   var cv=document.getElementById('cDailyBar');
   var tip=document.getElementById('cDailyTip');
@@ -296,18 +296,18 @@ tr:hover td{background:#1C1C1F}
   <div class="two" style="margin-bottom:16px">
     <div><div class="st pos">수익 Best 5</div>
       <table><thead><tr><th>종목명</th><th class="r">실현손익</th><th class="r">수익률</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX SK하이닉스단일종목레버리지</td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,928,532원</td><td class='r' style='color:#FF5A5A'>+2.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A;font-weight:600'>+426,450원</td><td class='r' style='color:#FF5A5A'>+1.3%</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r' style='color:#4A90E2;font-weight:600'>-82,890원</td><td class='r' style='color:#4A90E2'>-0.2%</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX SK하이닉스단일종목레버리지</td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,928,532원</td><td class='r' style='color:#FF5A5A'>+2.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A;font-weight:600'>+1,784,110원</td><td class='r' style='color:#FF5A5A'>+3.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A;font-weight:600'>+821,320원</td><td class='r' style='color:#FF5A5A'>+1.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>4일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>DB손해보험</td><td class='r' style='color:#4A90E2;font-weight:600'>-95,351원</td><td class='r' style='color:#4A90E2'>-4.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>롯데손해보험</td><td class='r' style='color:#4A90E2;font-weight:600'>-186,164원</td><td class='r' style='color:#4A90E2'>-9.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td></tr></tbody></table></div>
     <div><div class="st neg">손실 Worst 5</div>
       <table><thead><tr><th>종목명</th><th class="r">실현손익</th><th class="r">수익률</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r' style='color:#4A90E2;font-weight:600'>-82,890원</td><td class='r' style='color:#4A90E2'>-0.2%</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A;font-weight:600'>+426,450원</td><td class='r' style='color:#FF5A5A'>+1.3%</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX SK하이닉스단일종목레버리지</td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,928,532원</td><td class='r' style='color:#FF5A5A'>+2.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KB금융</td><td class='r' style='color:#4A90E2;font-weight:600'>-449,350원</td><td class='r' style='color:#4A90E2'>-9.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>7일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>신한지주</td><td class='r' style='color:#4A90E2;font-weight:600'>-396,385원</td><td class='r' style='color:#4A90E2'>-8.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>7일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>롯데손해보험</td><td class='r' style='color:#4A90E2;font-weight:600'>-186,164원</td><td class='r' style='color:#4A90E2'>-9.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>DB손해보험</td><td class='r' style='color:#4A90E2;font-weight:600'>-95,351원</td><td class='r' style='color:#4A90E2'>-4.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td></tr></tbody></table></div>
   </div>
   <div class="two">
     <div><div class="st pos">수익률 Best 5</div>
       <table><thead><tr><th>종목명</th><th class="r">수익률</th><th class="r">실현손익</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX SK하이닉스단일종목레버리지</td><td class='r' style='color:#FF5A5A'>+2.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,928,532원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A'>+1.3%</td><td class='r' style='color:#FF5A5A;font-weight:600'>+426,450원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r' style='color:#4A90E2'>-0.2%</td><td class='r' style='color:#4A90E2;font-weight:600'>-82,890원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A'>+3.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+1,784,110원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX SK하이닉스단일종목레버리지</td><td class='r' style='color:#FF5A5A'>+2.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,928,532원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A'>+1.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>4일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+821,320원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>DB손해보험</td><td class='r' style='color:#4A90E2'>-4.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-95,351원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td></tr></tbody></table></div>
     <div><div class="st neg">수익률 Worst 5</div>
       <table><thead><tr><th>종목명</th><th class="r">수익률</th><th class="r">실현손익</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>PLUS 삼성전자선물단일종목인버스2X</td><td class='r' style='color:#4A90E2'>-0.2%</td><td class='r' style='color:#4A90E2;font-weight:600'>-82,890원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>SOL SK하이닉스선물단일종목인버스2X</td><td class='r' style='color:#FF5A5A'>+1.3%</td><td class='r' style='color:#FF5A5A;font-weight:600'>+426,450원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX SK하이닉스단일종목레버리지</td><td class='r' style='color:#FF5A5A'>+2.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,928,532원</td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>롯데손해보험</td><td class='r' style='color:#4A90E2'>-9.3%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-186,164원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KB금융</td><td class='r' style='color:#4A90E2'>-9.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>7일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-449,350원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>신한지주</td><td class='r' style='color:#4A90E2'>-8.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>7일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-396,385원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 삼성전자단일종목레버리지</td><td class='r' style='color:#4A90E2'>-6.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>16일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-3,085,635원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>DB손해보험</td><td class='r' style='color:#4A90E2'>-4.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>2일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-95,351원</td></tr></tbody></table></div>
   </div>
   
 </div>
