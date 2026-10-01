@@ -9,8 +9,12 @@
 !summary.html
 !pension.html
 !consolidated.html
-!acct_용돈1.html
-!acct_용돈2.html
+# 계좌 리포트 (2026-08 계좌명 재변경 반영, 2026-10-01)
+!acct_용돈들.html
+!acct_물소.html
 !acct_생활비.html
-!acct_국내etf.html
-!acct_커버드콜.html
+!acct_국내.html
+!acct_세금.html
+!acct_자동차보험.html
+!acct_연말정산.html
+!acct_여행.html
