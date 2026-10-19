@@ -42,57 +42,57 @@ tr:hover td{background:#1C1C1F}
 <body>
 <div class="wrap">
   <h1>생활비 성과 리포트</h1>
-  <div class="sub">생성: 2026.10.19 07:01 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.10.19</div>
+  <div class="sub">생성: 2026.10.19 15:58 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.10.19</div>
   <div class="total-card">
   <div class="total-label">총 자산</div>
-  <div class="total-amount">53,485,106원</div>
-  <div class="total-sub">주식평가 18,448,886원 + 예수금 35,036,220원</div>
+  <div class="total-amount">52,531,300원</div>
+  <div class="total-sub">주식평가 6,094,513원 + 예수금 46,436,787원</div>
 </div>
   <div class="card">
   <div class="ct">핵심 성과 지표</div>
   <div class="metrics"><div class="metric">
   <div class="ml">순 입금액 (총납입금)</div>
-  <div class="mv pos">+58,889,305원</div>
+  <div class="mv pos">+58,921,127원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">KRW + USD (현재환율)</div>
 </div>
 <div class="metric">
   <div class="ml">평가 금액</div>
-  <div class="mv neu">18,448,886원</div>
+  <div class="mv neu">6,094,513원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 기준</div>
 </div>
 <div class="metric">
   <div class="ml">평가 손익</div>
-  <div class="mv neg">-423,751원</div>
+  <div class="mv neg">-133,812원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">보유종목 미실현손익 합계</div>
 </div>
 <div class="metric">
   <div class="ml">실현 손익</div>
-  <div class="mv pos">+34,342,587원</div>
+  <div class="mv pos">+33,298,066원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">국내 + 해외 (거래당시환율)</div>
 </div>
 <div class="metric">
   <div class="ml">분배금 + 이자</div>
-  <div class="mv pos">+882,233원</div>
+  <div class="mv pos">+881,382원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">KRW + USD 환산</div>
 </div>
 <div class="metric">
   <div class="ml">총 손익</div>
-  <div class="mv pos">+34,801,070원</div>
+  <div class="mv pos">+34,045,636원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">평가손익 + 실현손익 + 분배금/이자</div>
 </div>
 <div class="metric">
   <div class="ml">누적 수익률</div>
-  <div class="mv pos">+59.1%</div>
+  <div class="mv pos">+57.8%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">총손익 ÷ 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">Modified Dietz</div>
-  <div class="mv neg">-56.7%</div>
+  <div class="mv neg">-67.0%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">시간가중 수익률</div>
 </div>
 <div class="metric">
   <div class="ml">연환산 수익률 (XIRR)</div>
-  <div class="mv neg">-13.2%</div>
+  <div class="mv neg">-15.6%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">4.3년 기준</div>
 </div>
 </div>
@@ -108,9 +108,9 @@ tr:hover td{background:#1C1C1F}
       <canvas id="cDonut_port" style="width:100%;height:280px;display:block"></canvas>
       <script>
 (function(){
-  var labels=["디렉시온 20+년 미국채 ", "디렉시온 반도체 -3배 E", "모더나", "브라이트스프링 헬스 서비스", "코르테바", "테슬라", "베라더믹스"];
-  var vals=[4883036, 3223999, 2622333, 2603288, 2530476, 1422250, 1163503];
-  var colors=["#2DD4BF", "#378ADD", "#BA7517", "#534AB7", "#D85A30", "#C04DB7", "#2E8B57"];
+  var labels=["모더나"];
+  var vals=[6094513];
+  var colors=["#2DD4BF"];
   var cv=document.getElementById('cDonut_port');
   function resize(){
     var w=cv.parentElement.offsetWidth||300;
@@ -146,7 +146,7 @@ tr:hover td{background:#1C1C1F}
     ctx.fillStyle='#F4F4F5';ctx.font='bold 12px sans-serif';ctx.textAlign='center';
     ctx.fillText('보유 비중',cx,cy-4);
     ctx.font='10px sans-serif';ctx.fillStyle='#8E8E93';
-    ctx.fillText('7종목',cx,cy+12);
+    ctx.fillText('1종목',cx,cy+12);
     ctx.restore();
   }
   window.addEventListener('resize',resize);
@@ -156,18 +156,18 @@ tr:hover td{background:#1C1C1F}
     </div>
     <div style="display:flex;flex-direction:column;justify-content:center">
       <table><thead><tr><th>종목명</th><th class="r">평가금액</th><th class="r">비중</th></tr></thead>
-      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>디렉시온 20+년 미국채 -3배 ETF</td><td class='r'>488만원</td><td class='r'>26.5%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#378ADD;margin-right:5px;vertical-align:middle'></span>디렉시온 반도체 -3배 ETF</td><td class='r'>322만원</td><td class='r'>17.5%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#BA7517;margin-right:5px;vertical-align:middle'></span>모더나</td><td class='r'>262만원</td><td class='r'>14.2%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#534AB7;margin-right:5px;vertical-align:middle'></span>브라이트스프링 헬스 서비스</td><td class='r'>260만원</td><td class='r'>14.1%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#D85A30;margin-right:5px;vertical-align:middle'></span>코르테바</td><td class='r'>253만원</td><td class='r'>13.7%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#C04DB7;margin-right:5px;vertical-align:middle'></span>테슬라</td><td class='r'>142만원</td><td class='r'>7.7%</td></tr><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2E8B57;margin-right:5px;vertical-align:middle'></span>베라더믹스</td><td class='r'>116만원</td><td class='r'>6.3%</td></tr></tbody></table>
+      <tbody><tr><td class='n'><span style='display:inline-block;width:10px;height:10px;border-radius:2px;background:#2DD4BF;margin-right:5px;vertical-align:middle'></span>모더나</td><td class='r'>609만원</td><td class='r'>100.0%</td></tr></tbody></table>
     </div>
   </div>
 </div>
   <div class="card">
-  <div class="ct">보유 종목 상세 (7종목)</div>
+  <div class="ct">보유 종목 상세 (1종목)</div>
   <div style="overflow-x:auto">
   <table class="hsort"><thead><tr>
     <th data-s="t">종목명</th><th class="c">코드</th><th class="r">수량</th>
     <th class="r">평단가</th><th class="r">현재가</th><th class="r" data-s="n">평가금액(원)</th>
     <th class="r" data-s="n">미실현손익</th><th class="r" data-s="n">수익률</th><th class="r" data-s="n">보유기간</th>
-  </tr></thead><tbody><tr><td class='n'>디렉시온 20+년 미국채 -3배 ETF</td><td class='r'>TMV US</td><td class='r'>80.0000</td><td class='r'>49.8594 USD</td><td class='r'>46 USD</td><td class='r'>4,883,036</td><td class='r' style='color:#4A90E2;font-weight:600'>-447,928</td><td class='r' style='color:#4A90E2;font-weight:600'>-8.4%</td><td class='r' style='color:#8E8E93'>7일</td></tr><tr><td class='n'>코르테바</td><td class='r'>CTVA US</td><td class='r'>147.0000</td><td class='r'>13.5116 USD</td><td class='r'>13 USD</td><td class='r'>2,530,476</td><td class='r' style='color:#4A90E2;font-weight:600'>-124,081</td><td class='r' style='color:#4A90E2;font-weight:600'>-4.7%</td><td class='r' style='color:#8E8E93'>4일</td></tr><tr><td class='n'>모더나</td><td class='r'>MRNA US</td><td class='r'>9.0000</td><td class='r'>216.9422 USD</td><td class='r'>218 USD</td><td class='r'>2,622,333</td><td class='r' style='color:#FF5A5A;font-weight:600'>+12,844</td><td class='r' style='color:#FF5A5A;font-weight:600'>+0.5%</td><td class='r' style='color:#8E8E93'>5일</td></tr><tr><td class='n'>디렉시온 반도체 -3배 ETF</td><td class='r'>SOXS US</td><td class='r'>49.0000</td><td class='r'>39.9843 USD</td><td class='r'>49 USD</td><td class='r'>3,223,999</td><td class='r' style='color:#FF5A5A;font-weight:600'>+605,488</td><td class='r' style='color:#FF5A5A;font-weight:600'>+23.1%</td><td class='r' style='color:#8E8E93'>3일</td></tr><tr><td class='n'>브라이트스프링 헬스 서비스</td><td class='r'>BTSG US</td><td class='r'>32.0000</td><td class='r'>63.6450 USD</td><td class='r'>61 USD</td><td class='r'>2,603,288</td><td class='r' style='color:#4A90E2;font-weight:600'>-118,681</td><td class='r' style='color:#4A90E2;font-weight:600'>-4.4%</td><td class='r' style='color:#8E8E93'>5일</td></tr><tr><td class='n'>테슬라</td><td class='r'>TSLA US</td><td class='r'>3.0000</td><td class='r'>386.5167 USD</td><td class='r'>355 USD</td><td class='r'>1,422,250</td><td class='r' style='color:#4A90E2;font-weight:600'>-127,489</td><td class='r' style='color:#4A90E2;font-weight:600'>-8.2%</td><td class='r' style='color:#8E8E93'>5일</td></tr><tr><td class='n'>베라더믹스</td><td class='r'>MANE US</td><td class='r'>8.0000</td><td class='r'>129.7612 USD</td><td class='r'>109 USD</td><td class='r'>1,163,503</td><td class='r' style='color:#4A90E2;font-weight:600'>-223,904</td><td class='r' style='color:#4A90E2;font-weight:600'>-16.1%</td><td class='r' style='color:#8E8E93'>5일</td></tr></tbody></table>
+  </tr></thead><tbody><tr><td class='n'>모더나</td><td class='r'>MRNA US</td><td class='r'>21.0000</td><td class='r'>222.7967 USD</td><td class='r'>218 USD</td><td class='r'>6,094,513</td><td class='r' style='color:#4A90E2;font-weight:600'>-133,812</td><td class='r' style='color:#4A90E2;font-weight:600'>-2.1%</td><td class='r' style='color:#8E8E93'>5일</td></tr></tbody></table>
   </div>
   <div class="note">✅ 전 종목 현재가 조회 완료 · 열 제목을 누르면 ▼내림 → ▲오름 → 원래순서</div>
 </div>
@@ -213,7 +213,7 @@ tr:hover td{background:#1C1C1F}
 (function(){
   var labels=["08-20", "08-21", "08-24", "08-25", "08-26", "08-27", "08-28", "08-31", "09-01", "09-02", "09-03", "09-04", "09-08", "09-09", "09-10", "09-11", "09-14", "09-15", "09-16", "09-17", "09-18", "09-21", "09-22", "09-23", "09-24", "09-25", "09-28", "09-29", "09-30", "10-01", "10-02", "10-05", "10-06", "10-07", "10-08", "10-09", "10-12", "10-13", "10-14", "10-15", "10-16"];
   var pnl=[0, 0, 0, 0, 0, 0, -3, 0, 0, -66, 0, 0, 0, 0, 0, 0, 0, -37, 0, 0, 0, -37, -61, -44, -32, 0, -114, 0, 0, 0, -1, -14, -6, -1, 0, 0, -127, 0, 0, 26, 0];
-  var equity=[3696, 3666, 5274, 8515, 8603, 8543, 8321, 8454, 8246, 8332, 8364, 8965, 9096, 9150, 8648, 8473, 8030, 7811, 7820, 8327, 8997, 12246, 9853, 9501, 9429, 9547, 9265, 9276, 9335, 9649, 9016, 9153, 8531, 8682, 8200, 8208, 8444, 8443, 8465, 8442, 8450];
+  var equity=[3681, 3651, 5253, 8481, 8569, 8509, 8288, 8420, 8213, 8299, 8331, 8930, 9060, 9114, 8614, 8439, 7998, 7780, 7789, 8294, 8962, 12209, 9814, 9463, 9392, 9509, 9229, 9240, 9298, 9611, 8981, 9117, 8497, 8647, 8167, 8175, 8410, 8410, 8432, 8435, 8430];
   var hasEquity=true;
   var cv=document.getElementById('cDailyBar');
   var tip=document.getElementById('cDailyTip');
@@ -324,18 +324,18 @@ tr:hover td{background:#1C1C1F}
   <div class="two" style="margin-bottom:16px">
     <div><div class="st pos">수익 Best 5</div>
       <table><thead><tr><th>종목명</th><th class="r">실현손익</th><th class="r">수익률</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 MSCI 한국 3배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+27,457,657원</td><td class='r' style='color:#FF5A5A'>+48.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>29일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>TRADR 샌디스크 2배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+11,658,931원</td><td class='r' style='color:#FF5A5A'>+6.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>21일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+7,438,384원</td><td class='r' style='color:#FF5A5A'>+5.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>19일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 AMD 데일리 2배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+6,062,431원</td><td class='r' style='color:#FF5A5A'>+30.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>TIGER 반도체TOP10레버리지</td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,466,875원</td><td class='r' style='color:#FF5A5A'>+9.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>12일</span></td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 MSCI 한국 3배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+27,348,772원</td><td class='r' style='color:#FF5A5A'>+48.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>29일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>TRADR 샌디스크 2배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+11,612,697원</td><td class='r' style='color:#FF5A5A'>+6.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>21일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 마이크론 테크놀로지 2배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+7,408,887원</td><td class='r' style='color:#FF5A5A'>+5.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>19일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 AMD 데일리 2배 ETF</td><td class='r' style='color:#FF5A5A;font-weight:600'>+6,038,390원</td><td class='r' style='color:#FF5A5A'>+30.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>TIGER 반도체TOP10레버리지</td><td class='r' style='color:#FF5A5A;font-weight:600'>+3,466,875원</td><td class='r' style='color:#FF5A5A'>+9.8%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>12일</span></td></tr></tbody></table></div>
     <div><div class="st neg">손실 Worst 5</div>
       <table><thead><tr><th>종목명</th><th class="r">실현손익</th><th class="r">수익률</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>DEFIANCE DAILY TARGET 2X LONG </td><td class='r' style='color:#4A90E2;font-weight:600'>-6,210,007원</td><td class='r' style='color:#4A90E2'>-27.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>56일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 200선물인버스2X</td><td class='r' style='color:#4A90E2;font-weight:600'>-3,964,810원</td><td class='r' style='color:#4A90E2'>-9.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>3일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 인텔 데일리 2배 ETF</td><td class='r' style='color:#4A90E2;font-weight:600'>-2,683,906원</td><td class='r' style='color:#4A90E2'>-11.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>11일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>쎄트렉아이</td><td class='r' style='color:#4A90E2;font-weight:600'>-2,202,956원</td><td class='r' style='color:#4A90E2'>-22.4%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에이치브이엠</td><td class='r' style='color:#4A90E2;font-weight:600'>-1,587,963원</td><td class='r' style='color:#4A90E2'>-16.0%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>DEFIANCE DAILY TARGET 2X LONG </td><td class='r' style='color:#4A90E2;font-weight:600'>-6,185,381원</td><td class='r' style='color:#4A90E2'>-27.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>56일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>KODEX 200선물인버스2X</td><td class='r' style='color:#4A90E2;font-weight:600'>-3,964,810원</td><td class='r' style='color:#4A90E2'>-9.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>3일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 인텔 데일리 2배 ETF</td><td class='r' style='color:#4A90E2;font-weight:600'>-2,673,263원</td><td class='r' style='color:#4A90E2'>-11.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>11일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>쎄트렉아이</td><td class='r' style='color:#4A90E2;font-weight:600'>-2,202,956원</td><td class='r' style='color:#4A90E2'>-22.4%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에이치브이엠</td><td class='r' style='color:#4A90E2;font-weight:600'>-1,587,963원</td><td class='r' style='color:#4A90E2'>-16.0%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td></tr></tbody></table></div>
   </div>
   <div class="two">
     <div><div class="st pos">수익률 Best 5</div>
       <table><thead><tr><th>종목명</th><th class="r">수익률</th><th class="r">실현손익</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 MSCI 한국 3배 ETF</td><td class='r' style='color:#FF5A5A'>+48.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>29일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+27,457,657원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>레버리지셰어즈 한국 -3배 ETP</td><td class='r' style='color:#FF5A5A'>+42.4%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>6일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+573,987원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 AMD 데일리 2배 ETF</td><td class='r' style='color:#FF5A5A'>+30.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+6,062,431원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>케어Dx</td><td class='r' style='color:#FF5A5A'>+25.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>46일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+334,860원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>모더나</td><td class='r' style='color:#FF5A5A'>+22.5%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>46일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+288,176원</td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>디렉시온 MSCI 한국 3배 ETF</td><td class='r' style='color:#FF5A5A'>+48.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>29일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+27,348,772원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>레버리지셰어즈 한국 -3배 ETP</td><td class='r' style='color:#FF5A5A'>+42.4%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>6일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+571,710원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>그래닛셰어즈 AMD 데일리 2배 ETF</td><td class='r' style='color:#FF5A5A'>+30.6%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+6,038,390원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>케어Dx</td><td class='r' style='color:#FF5A5A'>+25.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>46일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+333,532원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>모더나</td><td class='r' style='color:#FF5A5A'>+22.5%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>46일</span></td><td class='r' style='color:#FF5A5A;font-weight:600'>+287,033원</td></tr></tbody></table></div>
     <div><div class="st neg">수익률 Worst 5</div>
       <table><thead><tr><th>종목명</th><th class="r">수익률</th><th class="r">실현손익</th></tr></thead>
-      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>어셈블리 바이오사이언시스</td><td class='r' style='color:#4A90E2'>-31.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>26일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-405,414원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>한화시스템</td><td class='r' style='color:#4A90E2'>-30.5%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-628,392원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에코플라스틱</td><td class='r' style='color:#4A90E2'>-28.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>10일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-584,830원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>DEFIANCE DAILY TARGET 2X LONG </td><td class='r' style='color:#4A90E2'>-27.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>56일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-6,210,007원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>솔브레인</td><td class='r' style='color:#4A90E2'>-23.4%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>21일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-463,378원</td></tr></tbody></table></div>
+      <tbody><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>어셈블리 바이오사이언시스</td><td class='r' style='color:#4A90E2'>-31.1%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>26일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-403,806원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>한화시스템</td><td class='r' style='color:#4A90E2'>-30.5%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>20일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-628,392원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>에코플라스틱</td><td class='r' style='color:#4A90E2'>-28.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>10일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-584,830원</td></tr><tr><td class='n'><span style='font-size:10px;background:#1A5EB8;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>해외</span>DEFIANCE DAILY TARGET 2X LONG </td><td class='r' style='color:#4A90E2'>-27.9%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>56일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-6,185,381원</td></tr><tr><td class='n'><span style='font-size:10px;background:#FF5A5A;color:#fff;padding:1px 5px;border-radius:3px;margin-right:4px'>국내</span>솔브레인</td><td class='r' style='color:#4A90E2'>-23.4%<br><span style='font-size:10px;color:#6B6B70;font-weight:400'>21일</span></td><td class='r' style='color:#4A90E2;font-weight:600'>-463,378원</td></tr></tbody></table></div>
   </div>
   
 </div>
