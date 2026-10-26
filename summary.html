@@ -1,86 +1,54 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>자산 종합 요약</title>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>자산 요약 2026.10.27 07:02</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Malgun Gothic",sans-serif;background:#0C0C0D;color:#E4E4E7;font-size:14px;line-height:1.6}
-.wrap{max-width:720px;margin:0 auto;padding:32px 16px}
-h1{font-size:22px;font-weight:700;color:#F4F4F5;margin-bottom:4px}
-.sub{color:#6B6B70;font-size:12px;margin-bottom:24px}
-/* 히어로: 차트는 가운데, 숫자 블록은 좌측 정렬로 통일 */
-.hero{background:#141416;border:1px solid #2A2A2E;border-radius:14px;padding:24px;
-       display:flex;flex-direction:column;align-items:center;gap:18px;margin-bottom:18px}
-.hero-donut{flex:0 0 auto}
-.hero-info{width:100%;text-align:left}
-.hero-num{font-size:34px;font-weight:700;color:#F4F4F5;letter-spacing:-0.5px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:600px){.grid2{grid-template-columns:1fr}}
-/* 아이패드 등 큰 화면: 글씨·여백·차트 확대 */
-@media(min-width:768px){
-  body{font-size:17px}
-  .wrap{max-width:920px;padding:48px 32px}
-  h1{font-size:30px}
-  .sub{font-size:14px;margin-bottom:32px}
-  .hero{padding:36px;gap:26px}
-  .hero-num{font-size:48px}
-  .hero-donut svg{width:230px !important;height:230px !important}
-  .grid2{gap:20px}
-}
-</style></head><body>
-<div class="wrap">
-  <h1>자산 종합 요약</h1>
-  <div class="sub">생성: 2026-10-26 16:47 &nbsp;|&nbsp; 수익률 = (평가금액 − 순투자원금) / 순투자원금</div>
-
-  <div class="hero">
-    <div class="hero-donut">
-    <svg viewBox="0 0 200 200" style="width:180px;height:180px">
-      <circle cx="100" cy="100" r="70" fill="none" stroke="#2A2A2E" stroke-width="26"/>
-      <circle cx="100" cy="100" r="70" fill="none" stroke="#2DD4BF" stroke-width="26"
-              stroke-dasharray="281.82 158.00" stroke-dashoffset="0"
-              transform="rotate(-90 100 100)"/>
-      <circle cx="100" cy="100" r="70" fill="none" stroke="#378ADD" stroke-width="26"
-              stroke-dasharray="158.00 281.82" stroke-dashoffset="-281.82"
-              transform="rotate(-90 100 100)"/>
-      <text x="100" y="96" text-anchor="middle" fill="#F4F4F5" font-size="13" font-weight="500">총자산</text>
-      <text x="100" y="116" text-anchor="middle" fill="#8E8E93" font-size="11">291,008,348</text>
-    </svg>
-    </div>
-    <div class="hero-info">
-      <div style="font-size:12px;color:#8E8E93;margin-bottom:4px">총 자산</div>
-      <div class="hero-num">291,008,348원</div>
-      <div style='font-size:14px;margin-top:10px'><span style='color:#FF5A5A;font-weight:600'>+53,135,916원</span> <span style='color:#FF5A5A'>(+22.3%)</span></div>
-      <div style="font-size:12px;color:#6B6B70;margin-top:8px">
-        <span style="color:#2DD4BF">●</span> 연금 64% &nbsp;
-        <span style="color:#378ADD">●</span> 일반 36%
-      </div>
-    </div>
-  </div>
-
-  <div class="grid2">
-    
-      <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:18px 20px">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-          <span style="width:10px;height:10px;border-radius:50%;background:#2DD4BF"></span>
-          <span style="font-size:13px;color:#8E8E93">DC 퇴직연금</span>
-        </div>
-        <div style="font-size:24px;font-weight:500;color:#F4F4F5">186,465,829<span style="font-size:14px;color:#A1A1A6">원</span></div>
-        <div style="font-size:12px;color:#6B6B70;margin-top:3px">비중 64.1%</div>
-        <div style='font-size:13px;margin-top:8px'><span style='color:#FF5A5A;font-weight:600'>+45,303,049원</span> <span style='color:#FF5A5A'>(+32.1%)</span></div>
-        <div style='font-size:11px;color:#6B6B70;margin-top:5px'>ETF평가 20,290,065원 + 예수금 166,175,764원</div>
-      </div>
-    
-    
-      <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:18px 20px">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-          <span style="width:10px;height:10px;border-radius:50%;background:#378ADD"></span>
-          <span style="font-size:13px;color:#8E8E93">일반계좌</span>
-        </div>
-        <div style="font-size:24px;font-weight:500;color:#F4F4F5">104,542,519<span style="font-size:14px;color:#A1A1A6">원</span></div>
-        <div style="font-size:12px;color:#6B6B70;margin-top:3px">비중 35.9%</div>
-        <div style='font-size:13px;margin-top:8px'><span style='color:#FF5A5A;font-weight:600'>+7,832,867원</span> <span style='color:#FF5A5A'>(+8.1%)</span></div>
-        <div style="margin-top:10px"><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>생활비</span><span>79,744,938원 <span style='color:#6B6B70'>(76%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>용돈들</span><span>11,770,482원 <span style='color:#6B6B70'>(11%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>세금</span><span>11,008,475원 <span style='color:#6B6B70'>(11%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>연말정산</span><span>826,559원 <span style='color:#6B6B70'>(1%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>자동차보험</span><span>600,247원 <span style='color:#6B6B70'>(1%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>여행</span><span>588,670원 <span style='color:#6B6B70'>(1%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>국내</span><span>3,148원 <span style='color:#6B6B70'>(0%)</span></span></div><div style='display:flex;justify-content:space-between;font-size:12px;color:#C4C4C8;padding:5px 0;border-bottom:1px solid #1F1F22'><span>물소</span><span>0원 <span style='color:#6B6B70'>(0%)</span></span></div></div>
-      </div>
-    
-  </div>
+*{box-sizing:border-box}
+body{margin:0;background:#0E0F11;color:#E7E7EA;font-family:'Noto Sans KR',system-ui,sans-serif;font-size:14px}
+a{color:inherit;text-decoration:none}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 16px 56px;display:flex;flex-direction:column;gap:16px}
+h1{margin:0;font-size:24px;font-weight:800;color:#F5F5F7} h2{margin:0;font-size:16px;font-weight:700;color:#F5F5F7}
+.card{background:#16181C;border:1px solid #24262B;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+a.card:hover{border-color:#2E3A3A}
+.hero{padding:22px;gap:16px}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.ch{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.more{font-size:12px;color:#2DD4BF;white-space:nowrap}
+.sub,.tl{font-size:12px;color:#9A9AA3;font-weight:500}
+.unit{font-size:14px;font-weight:500;color:#9A9AA3;margin-left:3px}
+.hero .unit{font-size:20px;margin-left:4px}
+.big{font-size:26px;font-weight:800;color:#F5F5F7}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tile{background:#1D1F24;border-radius:10px;padding:10px 12px} .tile .tl{font-size:11px} .tv{font-size:15px;font-weight:700}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}
+.bar{display:flex;height:10px;border-radius:6px;overflow:hidden;background:#24262B}
+.legend{display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:#B4B4BC}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:baseline;gap:6px;padding:7px 12px;border-radius:18px;background:#1D1F24;border:1px solid #2E3036;font-size:13px}
+.chip small{font-size:11px;color:#9A9AA3}
+.empty{background:#1D1F24;border-radius:10px;padding:24px;text-align:center;font-size:13px;color:#9A9AA3}
+table{width:100%;border-collapse:collapse;font-size:13px} th{text-align:left;font-weight:500;color:#9A9AA3;font-size:12px;padding:8px 6px;border-bottom:1px solid #24262B}
+td{padding:9px 6px;border-bottom:1px solid #1F2125} .r{text-align:right}
+</style></head><body><div class="wrap">
+<header class="row" style="align-items:flex-end;gap:8px"><h1>자산 요약</h1><div class="sub num">2026.10.27 07:02 기준</div></header>
+<section class="card hero">
+  <div class="row" style="align-items:flex-end">
+    <div><div class="tl" style="font-size:13px">총자산</div>
+      <div class="num" style="font-size:40px;font-weight:800;color:#F5F5F7;line-height:1.1">291,229,499<span class="unit">원</span></div></div>
+    <div class="num" style="display:flex;gap:28px;flex-wrap:wrap">
+      <div><div class="tl">총손익</div><div style="font-size:22px;font-weight:700;color:#FF6B6B">+53,357,067원</div></div>
+      <div><div class="tl">순투자원금 대비</div><div style="font-size:22px;font-weight:700;color:#FF6B6B">+22.4%</div></div>
+    </div></div>
+  <div class="bar"><div style="width:64.0%;background:#2DD4BF"></div><div style="width:36.0%;background:#378ADD"></div></div>
+  <div class="num legend"><span><i style="background:#2DD4BF"></i>연금 186,465,829원 · 64.0%</span>
+    <span><i style="background:#378ADD"></i>일반 104,763,670원 · 36.0%</span></div>
+</section>
+<section class="grid3"><a class="card" href="app.html#pension" target="_top"><div class="ch"><h2>DC 퇴직연금</h2><span class="more">자세히 →</span></div><div class="big num">186,465,829<span class="unit">원</span></div><div class="tiles num"><div class="tile"><div class="tl">총손익</div><div class="tv" style="color:#FF6B6B">+45,303,049 · +32.1%</div></div><div class="tile"><div class="tl">투자 비중</div><div class="tv" style="color:#F5F5F7">11%</div></div><div class="tile"><div class="tl">12개월 TWR</div><div class="tv" style="color:#FF6B6B">+20.3%</div></div><div class="tile"><div class="tl">혼합 벤치마크 대비</div><div class="tv" style="color:#5B9BEA">−8.3%p</div></div></div></a><a class="card" href="app.html#consolidated" target="_top"><div class="ch"><h2>일반계좌 (통합)</h2><span class="more">자세히 →</span></div><div class="big num">104,763,670<span class="unit">원</span></div><div class="tiles num"><div class="tile"><div class="tl">총손익</div><div class="tv" style="color:#FF6B6B">+8,054,018 · +8.3%</div></div><div class="tile"><div class="tl">XIRR</div><div class="tv" style="color:#FF6B6B">+7.4%</div></div><div class="tile"><div class="tl">코스피 대비 (XIRR)</div><div class="tv" style="color:#5B9BEA">−18.7%p</div></div><div class="tile"><div class="tl">S&amp;P500 대비 (XIRR)</div><div class="tv" style="color:#5B9BEA">−1.9%p</div></div></div></a><a class="card" href="app.html#mock" target="_top"><div class="ch"><h2>모의계좌 <span class="sub">자동매매</span></h2><span class="more">자세히 →</span></div><div class="big num">-</div><div class="tiles num"><div class="tile"><div class="tl">누적 수익률</div><div class="tv" style="color:#9A9AA3">-</div></div><div class="tile"><div class="tl">오늘 실현손익</div><div class="tv" style="color:#FF6B6B">+0</div></div><div class="tile"><div class="tl">오늘 체결</div><div class="tv" style="color:#F5F5F7">0건</div></div><div class="tile"><div class="tl">보유 종목</div><div class="tv" style="color:#F5F5F7">0종목</div></div></div></a></section>
+<section class="grid2"><a class="card" href="app.html#rrg_kr" target="_top"><div class="ch"><div><h2>코스피 주도 업종</h2><div class="sub">일간 RRG Leading · 10.26 · 6개</div></div><span class="more">RRG →</span></div><div class="chips"><span class="chip num">운송·창고<small>101.5 / 103.3</small></span><span class="chip num">IT 서비스<small>101.9 / 101.8</small></span><span class="chip num">음식료·담배<small>100.7 / 103.0</small></span><span class="chip num">유통<small>101.0 / 101.9</small></span><span class="chip num">화학<small>100.8 / 101.3</small></span><span class="chip num">섬유·의류<small>100.3 / 101.3</small></span></div></a><a class="card" href="app.html#rrg_us" target="_top"><div class="ch"><div><h2>미국 주도 섹터</h2><div class="sub">일간 RRG Leading · 10.23 · 3개</div></div><span class="more">RRG →</span></div><div class="chips"><span class="chip num">에너지(XLE)<small>104.3 / 102.8</small></span><span class="chip num">헬스케어(XLV)<small>102.0 / 100.8</small></span><span class="chip num">필수소비재(XLP)<small>100.4 / 101.8</small></span></div></a></section>
+<section class="card"><div class="ch"><div><h2>내일 매수 후보</h2>
+  <div class="sub">주도 업종 · 업종 내 RS 70↑ · 전략2(눌림목) · 전일 고가 +2틱 돌파 시 매수</div></div>
+  <span class="sub num">2026-10-26 스크리닝</span></div><div class="empty">조건을 통과한 종목 없음</div></section>
 </div></body></html>

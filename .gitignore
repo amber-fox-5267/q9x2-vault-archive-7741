@@ -1,4 +1,4 @@
-﻿# 전부 무시
+# 전부 무시
 *
 # 단, 아래만 허용
 !.gitignore
@@ -20,3 +20,7 @@
 !acct_여행.html
 # 나무 모의계좌 (2026-10-08)
 !mock_account.html
+
+# RRG (2026-10-26: 요약 대시보드에서 연결)
+!rrg_코스피업종.html
+!us_sector_rrg.html
