@@ -42,11 +42,11 @@ tr:hover td{background:#1C1C1F}
 <body>
 <div class="wrap">
   <h1>세금 성과 리포트</h1>
-  <div class="sub">생성: 2026.11.04 07:10 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.10.22</div>
+  <div class="sub">생성: 2026.11.04 15:47 &nbsp;|&nbsp; 데이터 기간: 2022.07.15 ~ 2026.10.22</div>
   <div class="total-card">
   <div class="total-label">총 자산</div>
-  <div class="total-amount">11,252,075원</div>
-  <div class="total-sub">주식평가 11,176,600원 + 예수금 75,475원</div>
+  <div class="total-amount">11,211,475원</div>
+  <div class="total-sub">주식평가 11,136,000원 + 예수금 75,475원</div>
 </div>
   <div class="card">
   <div class="ct">핵심 성과 지표</div>
@@ -57,12 +57,12 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">평가 금액</div>
-  <div class="mv neu">11,176,600원</div>
+  <div class="mv neu">11,136,000원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">현재가 기준</div>
 </div>
 <div class="metric">
   <div class="ml">평가 손익</div>
-  <div class="mv neg">-134,450원</div>
+  <div class="mv neg">-175,050원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">보유종목 미실현손익 합계</div>
 </div>
 <div class="metric">
@@ -82,22 +82,22 @@ tr:hover td{background:#1C1C1F}
 </div>
 <div class="metric">
   <div class="ml">총 손익</div>
-  <div class="mv pos">+1,601,890원</div>
+  <div class="mv pos">+1,561,290원</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">총자산 − 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">누적 수익률</div>
-  <div class="mv pos">+16.6%</div>
+  <div class="mv pos">+16.2%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">총손익 ÷ 순입금액</div>
 </div>
 <div class="metric">
   <div class="ml">Modified Dietz</div>
-  <div class="mv pos">+274.4%</div>
+  <div class="mv pos">+267.5%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">금액가중 수익률 (입출금 시점 반영)</div>
 </div>
 <div class="metric">
   <div class="ml">연환산 수익률 (XIRR)</div>
-  <div class="mv pos">+74.0%</div>
+  <div class="mv pos">+72.0%</div>
   <div style="font-size:11px;color:#6B6B70;margin-top:3px">4.3년 기준</div>
 </div>
 </div>
@@ -172,7 +172,7 @@ tr:hover td{background:#1C1C1F}
     <th data-s="t">종목명</th><th class="c">코드</th><th class="r">수량</th>
     <th class="r">평단가</th><th class="r">현재가</th><th class="r" data-s="n">평가금액(원)</th>
     <th class="r" data-s="n">미실현손익</th><th class="r" data-s="n">수익률</th><th class="r" data-s="n">보유기간</th>
-  </tr></thead><tbody><tr><td colspan='7' style='color:#6B6B70;text-align:center'>보유 없음</td></tr><tr><td class='n'>KT&G</td><td class='r'>033780</td><td class='r'>58</td><td class='r'>195,018원</td><td class='r'>192,700원</td><td class='r'>11,176,600원</td><td class='r' style='color:#4A90E2;font-weight:600'>-134,450원</td><td class='r' style='color:#4A90E2;font-weight:600'>-1.2%</td><td class='r' style='color:#8E8E93'>13일</td></tr></tbody></table>
+  </tr></thead><tbody><tr><td colspan='7' style='color:#6B6B70;text-align:center'>보유 없음</td></tr><tr><td class='n'>KT&G</td><td class='r'>033780</td><td class='r'>58</td><td class='r'>195,018원</td><td class='r'>192,000원</td><td class='r'>11,136,000원</td><td class='r' style='color:#4A90E2;font-weight:600'>-175,050원</td><td class='r' style='color:#4A90E2;font-weight:600'>-1.5%</td><td class='r' style='color:#8E8E93'>13일</td></tr></tbody></table>
   </div>
   <div class="note">✅ 전 종목 현재가 조회 완료 · 열 제목을 누르면 ▼내림 → ▲오름 → 원래순서</div>
 </div>
@@ -218,7 +218,7 @@ tr:hover td{background:#1C1C1F}
 (function(){
   var labels=["09-07", "09-08", "09-09", "09-10", "09-11", "09-14", "09-15", "09-16", "09-17", "09-18", "09-21", "09-22", "09-23", "09-28", "09-29", "09-30", "10-01", "10-02", "10-06", "10-07", "10-08", "10-12", "10-13", "10-14", "10-15", "10-16", "10-19", "10-20", "10-21", "10-22", "10-23", "10-26", "10-27", "10-28", "10-29", "10-30", "11-02", "11-03", "11-04"];
   var pnl=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, -12, 0, 0, 0, 0, -25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-  var equity=[185, 157, 147, 147, 147, 147, 147, 147, 148, 148, 148, 120, 420, 411, 363, 279, 279, 262, 242, 242, 242, 243, 243, 1138, 1138, 1138, 1138, 1138, 1138, 1131, 1106, 1103, 1090, 1098, 1127, 1145, 1124, 1125, 1125];
+  var equity=[185, 157, 147, 147, 147, 147, 147, 147, 148, 148, 148, 120, 420, 411, 363, 279, 279, 262, 242, 242, 242, 243, 243, 1138, 1138, 1138, 1138, 1138, 1138, 1131, 1106, 1103, 1090, 1098, 1127, 1145, 1124, 1125, 1121];
   var hasEquity=true;
   var cv=document.getElementById('cDailyBar');
   var tip=document.getElementById('cDailyTip');
